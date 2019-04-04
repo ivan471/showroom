@@ -52,7 +52,7 @@
     <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div  class="card h-100">
-          <button type="button"data-toggle="modal" data-target="#myModal">
+          <button type="button"data-toggle="modal" data-target="#toyota">
               <img class="card-img-top" src="asets/img/icon/toyota.jpeg" alt="" class="img-responsive">
           </button>
           <div class="card-body">
@@ -66,7 +66,7 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-            <button type="button" data-toggle="modal" data-target="#myModal">
+            <button type="button" data-toggle="modal" data-target="#honda">
           <img class="card-img-top" src="asets/img/icon/honda.jpeg" alt=""class="img-responsive">
           </button>
           <div class="card-body">
@@ -92,10 +92,12 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="asets/img/icon/nissan.png" alt=""></a>
+          <button type="button"data-toggle="modal" data-target="#myModal">
+          <img class="card-img-top" src="asets/img/icon/nissan.png" alt="">
+          </button>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Project Four</a>
+              <a href="#">NISSAN</a>
             </h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
@@ -103,7 +105,9 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="asets/img/icon/mitsubishi.png" alt=""></a>
+            <button type="button"data-toggle="modal" data-target="#myModal">
+          <img class="card-img-top" src="asets/img/icon/mitsubishi.png" alt="">
+          </button>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#">Project Five</a>
@@ -114,7 +118,9 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="asets/img/icon/daihatsu.jpg" alt=""></a>
+            <button type="button"data-toggle="modal" data-target="#myModal">
+        <img class="card-img-top" src="asets/img/icon/daihatsu.jpg" alt="">
+            </button>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#">Project Six</a>
@@ -200,16 +206,30 @@
 
   </div>
   <!-- /.container -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade" id="toyota" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
+            <center>
+            <h4 class="modal-title" id="myModalLabel">Mobil Toyota</h4>
+            </center>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Cara Membuat Pop UP Gambar dengan Bootstrap</h4>
+
           </div>
         </div>
       </div>
     </div>
+    <div class="modal fade" id="honda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Mobil Honda</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
