@@ -9,13 +9,12 @@
   <meta name="author" content="">
 
   <title>Meranti Motor Makassar</title>
-<link rel="icon" href="asets/img/icon" type="logo.jpg">
+  <link rel="icon" href="asets/img/icon" type="logo.jpg">
   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <link href="asets/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
   <link href="asets/css/modern-business.css" rel="stylesheet">
-<link href="asets/css/meranti.css" rel="stylesheet">
+  <link href="asets/css/tes.css" rel="stylesheet">
 </head>
-
 <body>

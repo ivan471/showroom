@@ -1,0 +1,101 @@
+.judul_halaman{
+	margin-top: 20px;
+}
+.halaman{
+	margin-top: 75px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 150px;
+
+}
+.card-img-top{
+		width: 40%;
+	}
+.h-100{
+		width: 45%;
+		height: inherit;
+}
+
+.input-group{
+	padding-right: 40%
+}
+
+.modal-content{
+	width: 220%;
+
+}
+.modal-dialog {
+	margin-top: 55px ;
+	margin-left: 135px;
+	margin-right: 100px;
+	margin-bottom: 200px;
+}
+.listmerek{
+	margin-left: 20px;
+}
+.mb-4{
+	width: 155px;
+}
+.col-md-2 {
+	max-Width: 11%;
+}
+.card-title{
+	font-size: 20px;
+}
+.row{
+	margin-right: 0px;
+}
+
+.carousel .carousel-control {
+		width: 40px;
+    background: #7ac400;
+    margin: auto 0;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+.carousel-control.right {
+	right: 0;
+  left: auto;
+}
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	color: #000;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel .carousel-control.right i {
+
+    margin-right: -4px;
+
+}
+.carousel .carousel-control i {
+
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -19px 0 0 0;
+    margin-right: 0px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-shadow: none;
+    font-weight: bold;
+
+}
+fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+}
+.multi-item-example{
+	padding: 20px;
+}
+.btn-block {
+	width: 800%;
+}
+.mb-2 {
+	max-Width: 65%;
+}

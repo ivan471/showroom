@@ -38,148 +38,230 @@
       </a>
     </div>
   </header>
-  <footer class="py-3 bg-dark">
-    <div class="container">
+  <footer class="py-3 bg-dark"></footer><br>
 
+  <div class="listmerek">
+        <h2>Cari Mobil Bekas dari Merek Populer</h2>
+        <div class="row">
+          <div class="col-md-2">
+            <div  class="card mb-4">
+              <center>
+                <input type="image" src="asets/img/icon/toyota3.jpeg" width="100" height="100" data-toggle="modal" data-target="#toyota">
+                <div class="card-body">
+                  <h4 class="card-title">TOYOTA</h4>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-4">
+              <center>
+                <input type="image" src="asets/img/icon/honda.jpeg" width="100" height="100" data-toggle="modal" data-target="#honda">
+                <div class="card-body">
+                  <h4 class="card-title">HONDA</h4>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-4">
+              <center>
+                <input type="image" src="asets/img/icon/suzuki.jpg" width="100" height="100" data-toggle="modal" data-target="#suzuki">
+                <div class="card-body">
+                  <h4 class="card-title">SUZUKI</h4>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-4">
+              <center>
+                <input type="image" src="asets/img/icon/nissan.png" width="100" height="100" data-toggle="modal" data-target="#nissan">
+                <div class="card-body">
+                  <h4 class="card-title">NISSAN</h4>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-4">
+              <center>
+                <input type="image" src="asets/img/icon/mitsubishi.png" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
+              <div class="card-body">
+                <h4 class="card-title">MITSUBISHI</h4>
+              </div>
+            </center>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-4">
+              <center>
+                <input type="image" src="asets/img/icon/daihatsu.jpg" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
+                <div class="card-body">
+                  <h4 class="card-title">DAIHATSU</h4>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
     </div>
-    <!-- /.container -->
 
-  </footer><br>
-
-    <!-- Portfolio Section -->
-    <h2>Portfolio Heading</h2>
-
-    <div class="row">
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div  class="card h-100">
-          <button type="button"data-toggle="modal" data-target="#toyota">
-              <img class="card-img-top" src="asets/img/icon/toyota.jpeg" alt="" class="img-responsive">
-          </button>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a>TOYOTA</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-            <button type="button" data-toggle="modal" data-target="#honda">
-          <img class="card-img-top" src="asets/img/icon/honda.jpeg" alt=""class="img-responsive">
-          </button>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a>HONDA</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <button type="button"data-toggle="modal" data-target="#myModal">
-              <img class="card-img-top" src="asets/img/icon/suzuki.jpg" alt=""class="img-responsive">
-            </button>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">SUZUKI</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <button type="button"data-toggle="modal" data-target="#myModal">
-          <img class="card-img-top" src="asets/img/icon/nissan.png" alt="">
-          </button>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">NISSAN</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-            <button type="button"data-toggle="modal" data-target="#myModal">
-          <img class="card-img-top" src="asets/img/icon/mitsubishi.png" alt="">
-          </button>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Five</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-            <button type="button"data-toggle="modal" data-target="#myModal">
-        <img class="card-img-top" src="asets/img/icon/daihatsu.jpg" alt="">
-            </button>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Six</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-    <footer class="py-3 bg-dark">
-      <div class="container">
-      </div>
-      <!-- /.container -->
-    </footer><br>
-    <!-- /.row -->
+    <footer class="py-3 bg-dark"></footer><br>
     <!-- Marketing Icons Section -->
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+    <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 1</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 2</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 3</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 1</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 2</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 3</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 1</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 2</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="asets/img/icon/honda.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title 3</h4>
+              <p class="card-text">Rp.250.000.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Third slide-->
+
+      <!--Controls-->
+      <!--/.Indicators-->
+  </div>
+  <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
+  <i class="fa fa-angle-left"></i>
+ </a>
+ <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
+   <i class="fa fa-angle-right"></i>
+ </a>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+    <footer class="py-3 bg-dark"></footer><br>
       <!-- Page Content -->
-      <div class="container">
-        <h1 class="my-4">Meranti Motor Makassar</h1>
-        <h3 class="my-4">Jual Beli Mobil Bekas</h3>
-    <div class="row">
+    <div class="container">
+      <h1 class="my-4">Meranti Motor Makassar</h1>
+      <h3 class="my-4">Jual Beli Mobil Bekas</h3>
+      <div class="row">
       <div class="col-lg-6">
-        <h2>Meranti Motor makassar</h2>
+        <h2>Meranti Motor Makassar</h2>
         <h6>Situs Pencarian mobil bekas terpercaya dimakassar</h6>
         <br>
           <p>Siap Melayani dengan sepenuh hati:</p>
@@ -189,16 +271,14 @@
           <li>Syarat Berkas yang Mudah</li>
       </div>
       <div class="col-lg-6">
-    <body>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.661402727205!2d119.45243571396017!3d-5.1580671535537705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2dd67a6492b%3A0xe2d338315a424058!2sJl.+Meranti+2%2C+Paropo%2C+Panakkukang%2C+Kota+Makassar%2C+Sulawesi+Selatan+90231!5e0!3m2!1sid!2sid!4v1554345014646!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </body>
+        <body>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.661402727205!2d119.45243571396017!3d-5.1580671535537705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2dd67a6492b%3A0xe2d338315a424058!2sJl.+Meranti+2%2C+Paropo%2C+Panakkukang%2C+Kota+Makassar%2C+Sulawesi+Selatan+90231!5e0!3m2!1sid!2sid!4v1554345014646!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </body>
       </div>
     </div>
     <!-- /.row -->
     <!-- Call to Action Section -->
     <div class="row mb-4">
-      <div class="col-md-8">
-      </div>
       <div class="col-md-4">
         <a class="btn btn-lg btn-secondary btn-block" href="#">Hubungi Kami</a>
       </div>
@@ -214,7 +294,32 @@
             <h4 class="modal-title" id="myModalLabel">Mobil Toyota</h4>
             </center>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <center>
+                <img src="asets/img/list/Ayla.jpg" alt="">
+                <h3>Label 1</h3>
+              </center>
+            </div>
+            <div class="col-md-4">
+              <center>
+                <img src="asets/img/list/apv.jpg" alt="">
+                <h3>Label 2</h3>
+              </center>
+            </div>
+            <div class="col-md-4">
+              <center>
+                <img src="asets/img/list/Agya.png" alt="">
+                <h3>Label 3</h3>
+              </center>
+            </div>
+            <div class="col-md-4">
+              <center>
+                <img src="asets/img/list/Agya.png" alt="">
+                <h3>Label 4</h3>
+              </center>
+            </div>
           </div>
         </div>
       </div>
@@ -225,7 +330,6 @@
             <div class="modal-header">
               <h4 class="modal-title" id="myModalLabel">Mobil Honda</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
             </div>
           </div>
         </div>
