@@ -305,26 +305,80 @@
           <div class="row">
             <div id="gmbr" class="col-md-3">
               <center>
-                <img src="asets/img/list/Ayla.jpg" alt="">
-                <h3>Label 1</h3>
+                <img src="asets/img/list/agya.jpg" alt="">
+                <h3>Toyota Agya</h3>
               </center>
             </div>
             <div id="gmbr" class="col-md-3">
               <center>
-                <img src="asets/img/list/apv.jpg" alt="">
-                <h3>Label 2</h3>
+                <img src="asets/img/list/calya.jpg" alt="">
+                <h3>Toyota Calya</h3>
               </center>
             </div>
             <div id="gmbr" class="col-md-3">
               <center>
-                <img src="asets/img/list/Agya.png" alt="">
-                <h3>Label 3</h3>
+                <img src="asets/img/list/avanza2.jpg" alt="">
+                <h3>Toyota Avanza</h3>
               </center>
             </div>
             <div id="gmbr" class="col-md-3">
               <center>
-                <img src="asets/img/list/Agya.png" alt="">
-                <h3>Label 4</h3>
+                <img src="asets/img/list/innova.jpg" alt="">
+                <h3>Toyota Innova</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/yaris.jpg" alt="">
+                <h3>Toyota Yaris</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/sienta.jpg" alt="">
+                <h3>Toyota Sienta</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/alphard.jpg" alt="">
+                <h3>Toyota Alphard</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/fortuner.jpg" alt="">
+                <h3>Toyota Fortuner</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/Rush.jpg" alt="">
+                <h3>Toyota Rush</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/camry.jpg" alt="">
+                <h3>Toyota Camry</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/etios.jpg" alt="">
+                <h3>Toyota Etios Valco</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/hilux2.jpg" alt="">
+                <h3>Toyota Hilux</h3>
+              </center>
+            </div>
+            <div id="gmbr" class="col-md-3">
+              <center>
+                <img src="asets/img/list/vios.jpg" alt="">
+                <h3>Toyota Vios</h3>
               </center>
             </div>
           </div>
@@ -338,9 +392,282 @@
               <h4 class="modal-title" id="myModalLabel">Mobil Honda</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
+            <div class="row">
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/brio.jpg" alt="">
+                  <h3>Honda Brio</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/mobilio.jpg" alt="">
+                  <h3>Honda Mobilio</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/jazz.jpg" alt="">
+                  <h3>Honda Jazz</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/crv.jpg" alt="">
+                  <h3>Honda CR-V</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/hrv.jpg" alt="">
+                  <h3>Honda HR-V</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/civic.jpg" alt="">
+                  <h3>Honda Civic</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/city.jpg" alt="">
+                  <h3>Honda City</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/accord.jpg" alt="">
+                  <h3>Honda Accord</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/brv.jpg" alt="">
+                  <h3>Honda BR-V</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/odyseey.jpg" alt="">
+                  <h3>Honda Odyssey</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/crz.jpg" alt="">
+                  <h3>Honda CR-Z</h3>
+                </center>
+              </div>
+              <div id="gmbr" class="col-md-3">
+                <center>
+                  <img src="asets/img/list/freed.jpg" alt="">
+                  <h3>Honda Freed</h3>
+                </center>
+              </div>
           </div>
         </div>
       </div>
+        </div>
+        <div class="modal fade" id="suzuki" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Mobil Suzuki</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="row">
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/apv.jpg" alt="">
+                    <h3>Suzuki APV</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/ertiga.jpg" alt="">
+                    <h3>Suzuki Ertiga</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/karimun.jpg" alt="">
+                    <h3>Suzuki Karimun Wagon R</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/vitara.jpg" alt="">
+                    <h3>Suzuki Grand Vitara</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/carry.jpg" alt="">
+                    <h3>Suzuki Carry</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/swift.jpg" alt="">
+                    <h3>Suzuki Swift</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/sx4.jpg" alt="">
+                    <h3>Suzuki SX-4</h3>
+                  </center>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="nissan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Mobil Nissan</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="row">
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/grandlivina.jpg" alt="">
+                    <h3>Nissan Grand Livina</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/march.jpg" alt="">
+                    <h3>Nissan March</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/xtrail.jpg" alt="">
+                    <h3>Nissan X-TRAIL</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/serena.jpg" alt="">
+                    <h3>Nissan Serena</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/evalia.jpg" alt="">
+                    <h3>Nissan Evalia</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/navara.jpg" alt="">
+                    <h3>Nissan Navara</h3>
+                  </center>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="mitsubishi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Mobil Mitsubishi</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="row">
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/pajero.jpg" alt="">
+                    <h3>Mitsubishi Pajero Sport</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/outlander.jpg" alt="">
+                    <h3>Mitsubishi Outlander</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/mirage.jpg" alt="">
+                    <h3>Mitsubishi Mirage</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/triton.jpg" alt="">
+                    <h3>Mitsubishi Triton</h3>
+                  </center>
+                </div>
+                <div id="gmbr" class="col-md-3">
+                  <center>
+                    <img src="asets/img/list/xpander.jpg" alt="">
+                    <h3>Mitsubishi Xpander</h3>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="modal fade" id="daihatsu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Mobil Daihatsu</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="row">
+                  <div id="gmbr" class="col-md-3">
+                    <center>
+                      <img src="asets/img/list/ayla.jpg" alt="">
+                      <h3>Daihatsu ayla</h3>
+                    </center>
+                  </div>
+                  <div id="gmbr" class="col-md-3">
+                    <center>
+                      <img src="asets/img/list/sigra.jpg" alt="">
+                      <h3>Daihatsu Sigra</h3>
+                    </center>
+                  </div>
+                  <div id="gmbr" class="col-md-3">
+                    <center>
+                      <img src="asets/img/list/xenia.jpg" alt="">
+                      <h3>Daihatsu Xenia</h3>
+                    </center>
+                  </div>
+                  <div id="gmbr" class="col-md-3">
+                    <center>
+                      <img src="asets/img/list/terios.jpg" alt="">
+                      <h3>Daihatsu Terios</h3>
+                    </center>
+                  </div>
+                  <div id="gmbr" class="col-md-3">
+                    <center>
+                      <img src="asets/img/list/granmax.jpg" alt="">
+                      <h3>Daihatsu Granmax</h3>
+                    </center>
+                  </div>
+                  <div id="gmbr" class="col-md-3">
+                    <center>
+                      <img src="asets/img/list/luxio.jpg" alt="">
+                      <h3>Daihatsu Luxio</h3>
+                    </center>
+                  </div>
+                  <div id="gmbr" class="col-md-3">
+                    <center>
+                      <img src="asets/img/list/sirion.jpg" alt="">
+                      <h3>Daihatsu Sirion</h3>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
   <!-- Footer -->
   <div class="container1">
     <div id="cs"class="col-sm-12">
