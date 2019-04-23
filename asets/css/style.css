@@ -34,10 +34,11 @@
 	margin-left: 20px;
 }
 .mb-4{
-	width: 155px;
+	width: 115% ;
 }
 .col-md-2 {
 	max-Width: 11%;
+	margin-right: 20px;
 }
 .card-title{
 	font-size: 20px;
@@ -96,6 +97,53 @@ fa {
 .btn-block {
 	width: 800%;
 }
-.mb-2 {
-	max-Width: 65%;
+.col-md-4{
+	 max-width: 18.33%;
+}
+#multi-item-example{
+	padding-bottom: -50px;
+	min-height: 0px;
+	height: 180px;
+	margin-left: 20px;
+}
+.col-md-3{
+	max-width: 280px;
+}
+#gmbr{
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+#tahun{
+	margin-left: 15px;
+	margin-right: 20px;
+}
+.mb-3{
+	margin-top: 20px;
+}
+#sorting{
+	margin-top: 20px;
+}
+#judul{
+	margin-left: 20px;
+}
+#harga{
+	margin-left: 230px;
+}
+.container1{
+	margin-left: auto;
+	margin-right: auto;
+	background: #DCDCDC;
+	display:list-item;
+}
+#cs{
+	margin-left: 13%;
+	margin-right: 13%;
+}
+.bg-dark{
+	background-color: #1E90FF;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+		color: #fff;
 }

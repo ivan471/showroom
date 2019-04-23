@@ -15,6 +15,6 @@
   <link href="asets/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="asets/css/modern-business.css" rel="stylesheet">
-  <link href="asets/css/tes.css" rel="stylesheet">
+  <link href="asets/css/style.css" rel="stylesheet">
 </head>
 <body>
