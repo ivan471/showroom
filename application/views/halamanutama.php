@@ -39,7 +39,6 @@
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
   <!--Slides-->
   <div class="carousel-inner" role="listbox">
-
     <!--First slide-->
     <div class="carousel-item active">
       <div class="row">
@@ -187,18 +186,13 @@
       </div>
     </div>
     <!--/.Third slide-->
-
-      <!--Controls-->
-      <!--/.Indicators-->
   </div>
+  <div class="controls pull-right hidden-xs">
   <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
-  <i class="fa fa-angle-left"></i>
- </a>
+  <i class="fa fa-angle-left"></i></a>
  <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
-   <i class="fa fa-angle-right"></i>
- </a>
-  <!--/.Slides-->
-
+   <i class="fa fa-angle-right"></i></a>
+ </div>
 </div>
 <!--/.Carousel Wrapper-->
     <footer class="py-3 bg-dark"></footer><br>
