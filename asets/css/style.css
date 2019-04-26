@@ -1,10 +1,11 @@
-.judul_halaman{
-	margin-top: 20px;
+#judul_halaman{
+	margin-top: 40px;
+	margin-left: 135px;
 }
 .halaman{
-	margin-top: 75px;
+	margin-top: 30px;
 	margin-left: 100px;
-	margin-right: 100px;
+	margin-right: 80px;
 	margin-bottom: 150px;
 }
 .card-img-top{
@@ -151,4 +152,35 @@ body{
 }
 #desc{
 	margin-left: 5px;
+}
+#search{
+	margin-top: 10px;
+	margin-left: 30%;
+}
+.pencarianmenu{
+	background-color: #1E90FF;
+
+}
+.col-md-6{
+	flex: 0 0 50%;
+	max-width: 100%;
+}
+#list1{
+	margin-top: 10px;
+}
+.container{
+	max-width: 1300px;
+	margin-bottom: 10px;
+}
+#slider-rekomendasi{
+	padding-left: 5%;
+}
+#detail-mobil{
+	margin-bottom: 10%;
+}
+.garis{
+	border-top: 1px solid #ccc;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(204, 204, 204);
 }

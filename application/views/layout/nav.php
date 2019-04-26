@@ -11,9 +11,24 @@
 					<a class="nav-link" href="/showroom">Beranda</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="pencarian">Pencarian Mobil</a>
+					<a class="nav-link" href="#">Profil Perusahaan</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
+<div class="pencarianmenu">
+
+<div id="search"class="col-lg-11-24 col-sm-8">
+	<form action="pencarian" class="py-1">
+		<div class="input-group w-100">
+				<input type="text" class="form-control" style="width:50%;" placeholder="Search">
+				<div class="input-group-append">
+					<button class="btn btn-warning" type="submit"onclick="pencarian">
+						<i class="fa fa-search"></i> Search
+					</button>
+				</div>
+			</div>
+	</form> <!-- search-wrap .end// -->
+</div> <!-- col.// -->
+</div>

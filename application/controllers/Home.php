@@ -10,7 +10,7 @@ class Home extends CI_Controller {
 		//$this->load->view('halamanutama');
 	}
 
-	public function detail_toyota()
+	public function detail()
 	{
 		$this->load->template('detail');
 	}

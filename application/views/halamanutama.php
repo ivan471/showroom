@@ -33,7 +33,9 @@
     </div>
   </header>
   <footer class="py-3 bg-dark"></footer><br>
-
+  <div class="rekomendasi">
+    <h4>Rekomendasi</h4>
+  </div>
     <!-- Marketing Icons Section -->
     <!--Carousel Wrapper-->
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
@@ -41,7 +43,7 @@
   <div class="carousel-inner" role="listbox">
     <!--First slide-->
     <div class="carousel-item active">
-      <div class="row">
+      <div id="slider-rekomendasi"class="row">
         <div class="col-md-4">
           <div class="card mb-2">
             <img class="card-img-top"
@@ -105,7 +107,7 @@
 
     <!--Second slide-->
     <div class="carousel-item">
-      <div class="row">
+      <div id="slider-rekomendasi"class="row">
         <div class="col-md-4">
           <div class="card mb-2">
             <img class="card-img-top"
@@ -147,7 +149,7 @@
 
     <!--Third slide-->
     <div class="carousel-item">
-      <div class="row">
+      <div id="slider-rekomendasi" class="row">
         <div class="col-md-4">
           <div class="card mb-2">
             <img class="card-img-top"
@@ -195,74 +197,83 @@
  </div>
 </div>
 <!--/.Carousel Wrapper-->
-    <footer class="py-3 bg-dark"></footer><br>
+<footer class="py-3 bg-dark"></footer><br>
       <!-- Page Content -->
+<section class="section-content padding-y-sm bg">
+  <div class="container">
+    <header class="section-heading heading-line">
+	     <h4 class="title-section bg text-uppercase">Merk Populer</h4>
+     </header>
+     <div class="card">
+       <div class="row no-gutters">
+	        <div class="col-md-3">
+            <article href="#" class="card-banner h-100 bg2">
+	             <div class="card-body zoom-wrap">
+		               <h5 class="title">MERK POPULER</h5>
+		                 <p>ISI BELUM ADA. </p>
+	                  </div>
+                  </article>
+	         </div> <!-- col.// -->
+	<div class="col-md-9">
+<ul class="row no-gutters border-cols">
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">TOYOTA</p>
+    <input class="img-sm" type="image" src="asets/img/icon/toyota3.jpeg" width="100" height="100" data-toggle="modal" data-target="#toyota">
+	</div>
+	</li>
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">HONDA</p>
+    <input class="img-sm" type="image" src="asets/img/icon/honda.jpeg" width="100" height="100" data-toggle="modal" data-target="#honda">
+  </div>
+	</li>
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">SUZUKI</p>
+    <input class="img-sm" type="image" src="asets/img/icon/suzuki.jpg" width="100" height="100" data-toggle="modal" data-target="#suzuki">
+	</div>
+	</li>
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">NISSAN</p>
+		<input class="img-sm" type="image" src="asets/img/icon/nissan.png" width="100" height="100" data-toggle="modal" data-target="#nissan">
+	</div>
+	</li>
+</ul>
+<ul class="row no-gutters border-cols">
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">MITSUBISHI</p>
+		<input class="img-sm" type="image" src="asets/img/icon/mitsubishi.png" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
+	</div>
+	</li>
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">DAIHATSU</p>
+		<input class="img-sm" type="image" src="asets/img/icon/daihatsu.jpg" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
+	</div>
+	</li>
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">MAZDA</p>
+		<input class="img-sm" type="image" src="asets/img/icon/" width="100" height="100" data-toggle="modal" data-target="#mazda">
+	</div>
+	</li>
+	<li class="col-6 col-md-3">
+	<div class="card-body">
+		<p class="word-limit">HINO</p>
+		<input class="img-sm" type="image" src="asets/img/icon/" width="100" height="100" data-toggle="modal" data-target="#hino">
+  </div>
+	</li>
+</ul>
+	</div> <!-- col.// -->
+</div> <!-- row.// -->
 
-        <div class="listmerek">
-              <h2>Cari Mobil Bekas dari Merek Populer</h2>
-              <div class="row">
-                <div class="col-md-2">
-                  <div  class="card mb-4">
-                    <center>
-                      <input type="image" src="asets/img/icon/toyota3.jpeg" width="100" height="100" data-toggle="modal" data-target="#toyota">
-                      <div class="card-body">
-                        <h4 class="card-title">TOYOTA</h4>
-                      </div>
-                    </center>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card mb-4">
-                    <center>
-                      <input type="image" src="asets/img/icon/honda.jpeg" width="100" height="100" data-toggle="modal" data-target="#honda">
-                      <div class="card-body">
-                        <h4 class="card-title">HONDA</h4>
-                      </div>
-                    </center>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card mb-4">
-                    <center>
-                      <input type="image" src="asets/img/icon/suzuki.jpg" width="100" height="100" data-toggle="modal" data-target="#suzuki">
-                      <div class="card-body">
-                        <h4 class="card-title">SUZUKI</h4>
-                      </div>
-                    </center>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card mb-4">
-                    <center>
-                      <input type="image" src="asets/img/icon/nissan.png" width="100" height="100" data-toggle="modal" data-target="#nissan">
-                      <div class="card-body">
-                        <h4 class="card-title">NISSAN</h4>
-                      </div>
-                    </center>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card mb-4">
-                    <center>
-                      <input type="image" src="asets/img/icon/mitsubishi.png" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
-                    <div class="card-body">
-                      <h4 class="card-title">MITSUBISHI</h4>
-                    </div>
-                  </center>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card mb-4">
-                    <center>
-                      <input type="image" src="asets/img/icon/daihatsu.jpg" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
-                      <div class="card-body">
-                        <h4 class="card-title">DAIHATSU</h4>
-                      </div>
-                    </center>
-                  </div>
-                </div>
-              </div>
-          </div>
+</div> <!-- card.// -->
+
+</div> <!-- container .//  -->
+</section>
 
           <footer class="py-3 bg-dark"></footer><br>
     <div class="container">
@@ -661,27 +672,3 @@
               </div>
             </div>
             </div>
-
-  <!-- Footer -->
-  <div class="container1">
-    <div id="cs"class="col-sm-12">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Meranti Motor Makassar</h4>
-          <p>Jl. Meranti 2 No.219, Paropo, Panakkukang, Kota Makassar, Sulawesi Selatan 90231</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Hubungi Kami</h4>
-          <p>Telepon : 085243201149<br>
-          Jam Operasional :<br>
-          Senin - Sabtu<br>
-          Jam 09:00 - 18:00 WIB</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Temukan Kami</h4>
-          <i style="font-size:20px" class="fa">&#xf082;</i><a href="#"> Facebook</a><br>
-          <i style="font-size:20px" class="fa">&#xf16d;</i><a href="#"> Instragram</a>
-        </div>
-      </div>
-    </div>
-    </div>
