@@ -34,7 +34,6 @@
 							</header>
 							<div class="filter-content collapse show" id="collapse33">
 								<div class="card-body">
-									<input type="range" class="custom-range" min="0" max="100" name="">
 									<div class="form-group col-md-6">
 				  					<label>Min</label>
 				  					<input class="form-control" placeholder="Rp.0" type="number">
@@ -202,7 +201,7 @@
 				</div> <!-- info-price-detail // -->
 				<br><br><br><br><br>
 				<p>
-					<a href="#" class="btn btn-secondary"> Details  </a>
+					<a href="detail" class="btn btn-secondary"> Details  </a>
 				</p>
 			</div> <!-- action-wrap.// -->
 		</aside> <!-- col.// -->

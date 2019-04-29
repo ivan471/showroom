@@ -14,6 +14,10 @@ class Home extends CI_Controller {
 	{
 		$this->load->template('detail');
 	}
+	public function profil()
+	{
+		$this->load->template('profil');
+	}
 	public function pencarian()
 	{
 		$this->load->template('pencarian');

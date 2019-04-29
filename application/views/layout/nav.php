@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container">
-		<a class="navbar-brand" href="/">Meranti Motor Makassar</a>
+		<img src="asets/icon/judul.jpeg" alt="" width="300" height="50">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -11,7 +11,7 @@
 					<a class="nav-link" href="/showroom">Beranda</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Profil Perusahaan</a>
+					<a class="nav-link" href="profil">Profil Perusahaan</a>
 				</li>
 			</ul>
 		</div>

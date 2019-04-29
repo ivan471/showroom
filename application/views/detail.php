@@ -16,28 +16,30 @@
 <main class="card">
 	<div class="row no-gutters">
 		<aside class="col-sm-6 border-right">
-<article class="gallery-wrap">
-<div class="img-big-wrap">
-  <div> <a href="asets/img/detail/bagian-depan.jpeg" data-fancybox=""><img src="asets/img/detail/bagian-depan.jpeg"></a></div>
-</div> <!-- slider-product.// -->
-<div class="img-small-wrap">
-  <div class="item-gallery"> <img src="asets/img/detail/bagian-samping.jpeg"></div>
-  <div class="item-gallery"> <img src="asets/img/detail/bagian-belakang.jpeg"></div>
-  <div class="item-gallery"> <img src="asets/img/detail/bagian-dalam-depan.jpeg"></div>
-  <div class="item-gallery"> <img src="asets/img/detail/bagian-dalam-belakang.jpeg"></div>
-</div> <!-- slider-nav.// -->
-</article> <!-- gallery-wrap .end// -->
-		</aside>
+			<article class="gallery-wrap">
+				<div class="img-big-wrap">
+  			<div>
+					<a href="asets/img/detail/bagian-depan.jpeg" data-fancybox="">
+						<img src="asets/img/detail/bagian-depan.jpeg"></a></div>
+					</div> <!-- slider-product.// -->
+					<div class="img-small-wrap">
+  					<div class="item-gallery"> <img src="asets/img/detail/bagian-samping.jpeg"></div>
+  					<div class="item-gallery"> <img src="asets/img/detail/bagian-belakang.jpeg"></div>
+  					<div class="item-gallery"> <img src="asets/img/detail/bagian-dalam-depan.jpeg"></div>
+  					<div class="item-gallery"> <img src="asets/img/detail/bagian-dalam-belakang.jpeg"></div>
+					</div> <!-- slider-nav.// -->
+				</article> <!-- gallery-wrap .end// -->
+			</aside>
 		<aside class="col-sm-6">
-<article class="card-body">
-<!-- short-info-wrap -->
-	<h3 class="title mb-3">Items 1</h3>
+			<article class="card-body">
+				<!-- short-info-wrap -->
+				<h3 class="title mb-3">Items 1</h3>
 
-<div class="mb-3">
-	<var class="price h3 text-warning">
-		<span class="currency">Rp.</span><span class="num">100.000.000</span>
-	</var>
-</div> <!-- price-detail-wrap .// -->
+				<div class="mb-3">
+					<var class="price h3 text-warning">
+						<span class="currency">Rp.</span><span class="num">100.000.000</span>
+					</var>
+				</div> <!-- price-detail-wrap .// -->
 <dl class="row">
 	<dt class="col-sm-5 garis">Merk</dt>
 	<dd class="col-sm-7 garis">Toyota</dd>

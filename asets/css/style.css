@@ -139,7 +139,7 @@ fa {
 		color: #fff;
 }
 body{
-	background-color: #FFFFF0;
+	background-color: #F8F8F8;
 }
 .carousel-control-next, .carousel-control-prev, .carousel-control-next:hover, .carousel-control-prev:hover {
 	width: 2%;
@@ -183,4 +183,10 @@ body{
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: rgb(204, 204, 204);
+}
+#ly1{
+	margin-left: 90px;
+}
+.bg-secondary{
+	margin-bottom: -15px;
 }

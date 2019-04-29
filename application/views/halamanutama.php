@@ -33,9 +33,7 @@
     </div>
   </header>
   <footer class="py-3 bg-dark"></footer><br>
-  <div class="rekomendasi">
-    <h4>Rekomendasi</h4>
-  </div>
+    <h4 id="ly1">Rekomendasi</h4>
     <!-- Marketing Icons Section -->
     <!--Carousel Wrapper-->
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
