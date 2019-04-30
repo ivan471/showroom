@@ -229,7 +229,7 @@
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">SUZUKI</p>
-    <input class="img-sm" type="image" src="asets/img/icon/suzuki.jpg" width="100" height="100" data-toggle="modal" data-target="#suzuki">
+    <input class="img-sm" type="image" src="asets/img/icon/suzuki.gif" width="100" height="100" data-toggle="modal" data-target="#suzuki">
 	</div>
 	</li>
 	<li class="col-6 col-md-3">

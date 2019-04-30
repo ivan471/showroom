@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Meranti Motor Makassar</title>
-  <link rel="icon" href="asets/icon/logo.jpeg" type="logo.jpg">
+  <link rel="icon" href="asets/icon/logo.gif" type="logo.jpg">
 
   <!-- Bootstrap core CSS -->
   <script src="asets/js/jquery-2.0.0.min.js" type="text/javascript"></script>
