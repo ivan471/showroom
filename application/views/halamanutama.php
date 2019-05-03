@@ -198,7 +198,7 @@
 <footer class="py-3 bg-dark"></footer><br>
       <!-- Page Content -->
 <section class="section-content padding-y-sm bg">
-  <div class="container">
+  <div class="container mb-3">
     <header class="section-heading heading-line">
 	     <h4 class="title-section bg text-uppercase">Merk Populer</h4>
      </header>
@@ -217,25 +217,25 @@
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">TOYOTA</p>
-    <input class="img-sm" type="image" src="asets/img/icon/toyota3.jpeg" width="100" height="100" data-toggle="modal" data-target="#toyota">
+    <input class="img-sm" type="image" src="<?=base_url('')  ?>asets/img/icon/toyota3.jpeg" width="100" height="100" data-toggle="modal" data-target="#toyota">
 	</div>
 	</li>
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">HONDA</p>
-    <input class="img-sm" type="image" src="asets/img/icon/honda.jpeg" width="100" height="100" data-toggle="modal" data-target="#honda">
+    <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/honda.jpeg')  ?>" width="100" height="100" data-toggle="modal" data-target="#honda">
   </div>
 	</li>
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">SUZUKI</p>
-    <input class="img-sm" type="image" src="asets/img/icon/suzuki.gif" width="100" height="100" data-toggle="modal" data-target="#suzuki">
+    <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/suzuki.gif')  ?>" width="100" height="100" data-toggle="modal" data-target="#suzuki">
 	</div>
 	</li>
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">NISSAN</p>
-		<input class="img-sm" type="image" src="asets/img/icon/nissan.png" width="100" height="100" data-toggle="modal" data-target="#nissan">
+		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/nissan.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#nissan">
 	</div>
 	</li>
 </ul>
@@ -243,25 +243,25 @@
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">MITSUBISHI</p>
-		<input class="img-sm" type="image" src="asets/img/icon/mitsubishi.png" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
+		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/mitsubishi.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
 	</div>
 	</li>
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">DAIHATSU</p>
-		<input class="img-sm" type="image" src="asets/img/icon/daihatsu.jpg" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
+		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/daihatsu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
 	</div>
 	</li>
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">MAZDA</p>
-		<input class="img-sm" type="image" src="asets/img/icon/" width="100" height="100" data-toggle="modal" data-target="#mazda">
+		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/')  ?>" width="100" height="100" data-toggle="modal" data-target="#mazda">
 	</div>
 	</li>
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">HINO</p>
-		<input class="img-sm" type="image" src="asets/img/icon/" width="100" height="100" data-toggle="modal" data-target="#hino">
+		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/')  ?>" width="100" height="100" data-toggle="modal" data-target="#hino">
   </div>
 	</li>
 </ul>

@@ -2,16 +2,15 @@
 <div class="container">
 <nav class="mb-3">
 <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Beranda</a></li>
     <li class="breadcrumb-item"><a href="#">Merk</a></li>
     <li class="breadcrumb-item"><a href="#">Jenis</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Items 1</li>
+    <li class="breadcrumb-item active" aria-current="page"><?= $mobil['nama'];  ?></li>
 </ol>
 </nav>
 
 <div class="row">
 <div class="col-xl-10 col-md-9 col-sm-12">
-
 
 <main class="card">
 	<div class="row no-gutters">
@@ -19,8 +18,8 @@
 			<article class="gallery-wrap">
 				<div class="img-big-wrap">
   			<div>
-					<a href="asets/img/detail/bagian-depan.jpeg" data-fancybox="">
-						<img src="asets/img/detail/bagian-depan.jpeg"></a></div>
+					<a href="" data-fancybox="">
+						<img src="<?= $mobil['gambar1'];  ?>"></a></div>
 					</div> <!-- slider-product.// -->
 					<div class="img-small-wrap">
   					<div class="item-gallery"> <img src="asets/img/detail/bagian-samping.jpeg"></div>
@@ -33,37 +32,39 @@
 		<aside class="col-sm-6">
 			<article class="card-body">
 				<!-- short-info-wrap -->
-				<h3 class="title mb-3">Items 1</h3>
+				<h3 class="title mb-3"><?= $mobil['nama']; ?></h3>
 
 				<div class="mb-3">
 					<var class="price h3 text-warning">
-						<span class="currency">Rp.</span><span class="num">100.000.000</span>
+						<span class="currency">Rp.</span><span class="num"><?= $mobil['harga'];  ?></span>
 					</var>
 				</div> <!-- price-detail-wrap .// -->
 <dl class="row">
 	<dt class="col-sm-5 garis">Merk</dt>
-	<dd class="col-sm-7 garis">Toyota</dd>
+	<dd class="col-sm-7 garis"><?= $mobil['merk'];  ?></dd>
+  <dt class="col-sm-5 garis">Model</dt>
+	<dd class="col-sm-7 garis"><?= $mobil['model'];  ?></dd>
 
 	<dt class="col-sm-5 garis">Warna</dt>
-  <dd class="col-sm-7 garis">Putih </dd>
+  <dd class="col-sm-7 garis"><?= $mobil['warna'];  ?> </dd>
 
   <dt class="col-sm-5 garis">Type</dt>
-  <dd class="col-sm-7 garis">Avansa </dd>
+  <dd class="col-sm-7 garis"><?= $mobil['type'];  ?> </dd>
 
 	<dt class="col-sm-5 garis">Transmisi</dt>
-	<dd class="col-sm-7 garis">Manual </dd>
+	<dd class="col-sm-7 garis"><?= $mobil['transmisi'];  ?> </dd>
 
 	<dt class="col-sm-5 garis">Kapasitas Mesin</dt>
-	<dd class="col-sm-7 garis">2359CC </dd>
+	<dd class="col-sm-7 garis"><?= $mobil['kapasitas'];  ?>CC </dd>
 
 	<dt class="col-sm-5 garis">No Polisi</dt>
-	<dd class="col-sm-7 garis">2359CC </dd>
+	<dd class="col-sm-7 garis"><?= $mobil['no_polisi'];  ?> </dd>
 
 	<dt class="col-sm-5 garis">Bahan Bakar</dt>
-	<dd class="col-sm-7 garis">Bensin </dd>
+	<dd class="col-sm-7 garis"><?= $mobil['bahan_bakar'];  ?> </dd>
 
 	<dt class="col-sm-5 garis">Masa Berlaku STNK</dt>
-	<dd class="col-sm-7 garis">27 April 2020 </dd>
+	<dd class="col-sm-7 garis"><?= $mobil['masa_berlaku_stnk'];  ?> </dd>
 </dl>
 <div class="rating-wrap">
 
@@ -79,10 +80,10 @@
 			<i class="fa fa-star"></i>
 		</li>
 	</ul>
-	<div class="label-rating">132 reviews</div>
+	<div class="label-rating">0 reviews</div>
 </div> <!-- rating-wrap.// -->
 	<hr>
-	<a href="#" class="btn  btn-warning"> <i class="fa fa-envelope"></i> Contact Supplier </a>
+	<a href="#" class="btn  btn-warning"> <i class="fa fa-envelope"></i> Kontact Supplier </a>
 <!-- short-info-wrap .// -->
 </article> <!-- card-body.// -->
 		</aside> <!-- col.// -->
@@ -93,13 +94,7 @@
 <article id="detail-mobil" class="card mt-3">
 	<div class="card-body">
 		<h4>Detail Mobil</h4>
-	<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi deserunt mollit anim id est laborum.</p>
+	<p>	<?= $mobil['deskripsi'];  ?></p>
 	</div> <!-- card-body.// -->
 </article> <!-- card.// -->
 

@@ -1,7 +1,7 @@
 
 <!-- ========================= FOOTER ========================= -->
 <footer class="section-footer bg-secondary">
-	<div class="container">
+	<div class="container mb-0">
 		<section class="footer-top padding-top">
 			<div class="row">
 				<aside class="col-sm-3 col-md-3 white">
@@ -41,8 +41,8 @@
 <!-- ========================= FOOTER END // ========================= -->
 
 <!-- Bootstrap core JavaScript -->
-<script src="asets/js/jquery.min.js"></script>
-<script src="asets/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('asets/js/jquery.min.js') ?>"></script>
+<script src="<?= base_url('asets/js/bootstrap.bundle.min.js') ?>"></script>
 </body>
 
 </html>

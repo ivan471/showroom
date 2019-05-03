@@ -63,42 +63,42 @@
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">5</span>Toyota</span>
+				  				<span class="float-right badge badge-light round">0</span>Toyota</span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">13</span>Honda</span>
+				  				<span class="float-right badge badge-light round">0</span>Honda</span>
 								</label> <!-- form-check.// -->
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">12</span>Nissan</span>
+				  				<span class="float-right badge badge-light round">0</span>Nissan</span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">32</span>Suzuki</span>
+				  				<span class="float-right badge badge-light round">0</span>Suzuki</span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">32</span>Mitsubishi</span>
+				  				<span class="float-right badge badge-light round">0</span>Mitsubishi</span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">32</span>Daihatsu</span>
+				  				<span class="float-right badge badge-light round">0</span>Daihatsu</span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">32</span>Mazda</span>
+				  				<span class="float-right badge badge-light round">0</span>Mazda</span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 				  				<input class="form-check-input" value="" type="checkbox">
 				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">32</span>Hino</span>
+				  				<span class="float-right badge badge-light round">0</span>Hino</span>
 								</label>  <!-- form-check.// -->
 							</form>
 						</div> <!-- card-body.// -->
@@ -107,14 +107,15 @@
 			</div> <!-- card.// -->
 		</aside> <!-- col.// -->
 		<main class="col-sm-9">
+			<?php foreach ($search as $s ) : ?>
 			<article class="card card-product">
 				<div class="card-body">
 					<div class="row">
 						<aside class="col-sm-3">
-							<div class="img-wrap"><img src="images/items/2.jpg"></div>
+							<div class="img-wrap"><img src="<?= $s['gambar1']  ?>" width="226" height="210"></div>
 						</aside> <!-- col.// -->
 						<article class="col-sm-6">
-							<h4 class="title">Avansa</h4>
+							<h4 class="title"><?= $s['nama'] ?></h4>
 							<div class="rating-wrap  mb-2">
 								<ul class="rating-stars">
 									<li style="width:80%" class="stars-active">
@@ -128,26 +129,30 @@
 										<i class="fa fa-star"></i>
 									</li>
 								</ul>
-								<div class="label-rating">132 reviews</div>
+								<div class="label-rating">0 reviews</div>
 							</div> <!-- rating-wrap.// -->
 						<dl class="dlist-align">
 				  		<dt>Warna</dt>
-				  	<dd>Hitam</dd>
-					</dl>  <!-- item-property-hor .// -->
-				<dl class="dlist-align">
-				  <dt>Tahun</dt>
-				  <dd>2015</dd>
-				</dl>  <!-- item-property-hor .// -->
-				<dl class="dlist-align">
-				  <dt>Transmisi</dt>
-				  <dd>Manual</dd>
-				</dl>  <!-- item-property-hor .// -->
+				  	<dd><?= $s['warna'] ?></dd>
+						</dl>  <!-- item-property-hor .// -->
+						<dl class="dlist-align">
+				  		<dt>Merk</dt>
+				  	<dd><?= $s['merk'] ?></dd>
+						</dl>  <!-- item-property-hor .// -->
+						<dl class="dlist-align">
+						  <dt>Tahun</dt>
+						  <dd><?= $s['tahun'] ?></dd>
+						</dl>  <!-- item-property-hor .// -->
+						<dl class="dlist-align">
+						  <dt>Transmisi</dt>
+						  <dd><?= $s['transmisi'] ?></dd>
+						</dl>  <!-- item-property-hor .// -->
 
 		</article> <!-- col.// -->
 		<aside class="col-sm-3 border-left">
 			<div class="action-wrap">
 				<div class="price-wrap h4">
-					<span class="price"> Rp.150.000.000 </span>
+					<span class="price"> <?= number_format($s['harga'], 0, ".", ".")  ?> </span>
 				</div> <!-- info-price-detail // -->
 				<br><br><br><br><br>
 				<p><a href="#" class="btn btn-secondary"> Details  </a></p>
@@ -156,58 +161,8 @@
 	</div> <!-- row.// -->
 	</div> <!-- card-body .// -->
 </article> <!-- card product .// -->
+<?php endforeach; ?>
 
-<article class="card card-product">
-	<div class="card-body">
-	<div class="row">
-		<aside class="col-sm-3">
-			<div class="img-wrap"><img src="images/items/1.jpg"></div>
-		</aside> <!-- col.// -->
-		<article class="col-sm-6">
-				<h4 class="title"> Label Item 2  </h4>
-				<div class="rating-wrap mb-2">
-					<ul class="rating-stars">
-						<li style="width:50%" class="stars-active">
-							<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-							<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</li>
-						<li>
-							<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-							<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</li>
-					</ul>
-					<div class="label-rating">12 reviews</div>
-					<div class="label-rating">154 orders </div>
-				</div> <!-- rating-wrap.// -->
-				<dl class="dlist-align">
-				  <dt>Warna</dt>
-				  <dd>Putih</dd>
-				</dl>  <!-- item-property-hor .// -->
-				<dl class="dlist-align">
-					<dt>Tahun</dt>
-				  <dd>2015</dd>
-				</dl>  <!-- item-property-hor .// -->
-				<dl class="dlist-align">
-					<dt>Transmisi</dt>
-				  <dd>Manual</dd>
-				</dl>  <!-- item-property-hor .// -->
-		</article> <!-- col.// -->
-		<aside class="col-sm-3 border-left">
-			<div class="action-wrap">
-				<div class="price-wrap h4">
-					<span class="price"> Rp.250.000.000 </span>
-				</div> <!-- info-price-detail // -->
-				<br><br><br><br><br>
-				<p>
-					<a href="detail" class="btn btn-secondary"> Details  </a>
-				</p>
-			</div> <!-- action-wrap.// -->
-		</aside> <!-- col.// -->
-	</div> <!-- row.// -->
-	</div> <!-- card-body .// -->
-		</article> <!-- card product .// -->
 	</main> <!-- col.// -->
 	</div>
 	</div> <!-- container .//  -->
