@@ -204,7 +204,7 @@ dt {
 }
 .gallery-wrap .img-big-wrap img {
     height: 450px;
-    width: auto;
+    width: 100%;
     display: inline-block;
     cursor: -webkit-zoom-in;
     cursor: zoom-in;

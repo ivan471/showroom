@@ -1,9 +1,14 @@
-<h2 id="judul_halaman">Pencarian Mobil</h2>
 <div class="halaman">
 		<div class="daftar-perncarian">
 <!-- ========================= SECTION CONTENT ========================= -->
 	<section class="section-content bg padding-y">
 		<div class="container">
+			<nav class="mb-3">
+			<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="<?= base_url() ?>">Beranda</a></li>
+					<li class="breadcrumb-item">Pencarian</li>
+			</ol>
+			</nav>
 			<div class="row">
 				<aside class="col-sm-3">
 					<div class="card card-filter">
@@ -106,16 +111,17 @@
 				</article> <!-- card-group-item.// -->
 			</div> <!-- card.// -->
 		</aside> <!-- col.// -->
+
 		<main class="col-sm-9">
-			<?php foreach ($search as $s ) : ?>
+			<?php foreach ($data->result() as $s ) : ?>
 			<article class="card card-product">
 				<div class="card-body">
 					<div class="row">
-						<aside class="col-sm-3">
-							<div class="img-wrap"><img src="<?= $s['gambar1']  ?>" width="226" height="210"></div>
+						<aside class="col-sm-4">
+							<div class="img-wrap"><img src="<?php echo $s->gambar1;  ?>" width="265" height="210"></div>
 						</aside> <!-- col.// -->
-						<article class="col-sm-6">
-							<h4 class="title"><?= $s['nama'] ?></h4>
+						<article class="col-sm-5">
+							<h4 class="title"><?php echo $s->nama; ?></h4>
 							<div class="rating-wrap  mb-2">
 								<ul class="rating-stars">
 									<li style="width:80%" class="stars-active">
@@ -131,39 +137,38 @@
 								</ul>
 								<div class="label-rating">0 reviews</div>
 							</div> <!-- rating-wrap.// -->
-						<dl class="dlist-align">
-				  		<dt>Warna</dt>
-				  	<dd><?= $s['warna'] ?></dd>
-						</dl>  <!-- item-property-hor .// -->
-						<dl class="dlist-align">
-				  		<dt>Merk</dt>
-				  	<dd><?= $s['merk'] ?></dd>
-						</dl>  <!-- item-property-hor .// -->
-						<dl class="dlist-align">
-						  <dt>Tahun</dt>
-						  <dd><?= $s['tahun'] ?></dd>
-						</dl>  <!-- item-property-hor .// -->
-						<dl class="dlist-align">
-						  <dt>Transmisi</dt>
-						  <dd><?= $s['transmisi'] ?></dd>
-						</dl>  <!-- item-property-hor .// -->
-
-		</article> <!-- col.// -->
-		<aside class="col-sm-3 border-left">
-			<div class="action-wrap">
-				<div class="price-wrap h4">
-					<span class="price"> <?= number_format($s['harga'], 0, ".", ".")  ?> </span>
-				</div> <!-- info-price-detail // -->
-				<br><br><br><br><br>
-				<p><a href="#" class="btn btn-secondary"> Details  </a></p>
-			</div> <!-- action-wrap.// -->
-		</aside> <!-- col.// -->
-	</div> <!-- row.// -->
-	</div> <!-- card-body .// -->
-</article> <!-- card product .// -->
-<?php endforeach; ?>
+							<dl class="dlist-align">
+								<dt><i class="fas fa-palette"></i>Warna</dt>
+					  	<dd><?php echo $s->warna; ?></dd>
+							</dl>  <!-- item-property-hor .// -->
+							<dl class="dlist-align">
+							  <dt><i class="far fa-calendar-alt"></i>Tahun</dt>
+							  <dd><?php echo $s->tahun; ?></dd>
+							</dl>  <!-- item-property-hor .// -->
+							<dl class="dlist-align">
+							  <dt><img src="<?= base_url().'asets/icon/transmisi.gif' ?>" width="15" height="15">Transmisi</dt>
+							  <dd><?php echo $s->transmisi; ?></dd>
+							</dl>  <!-- item-property-hor .// -->
+						</article> <!-- col.// -->
+						<aside class="col-sm-3 border-left">
+							<div class="action-wrap">
+								<div class="price-wrap h4">
+									<span class="price">Rp.<?php echo number_format($s->harga, 0, ".", ".") ?> </span>
+								</div> <!-- info-price-detail // -->
+								<br><br><br><br><br>
+								<p><a href="<?= base_url().'detail/'.$s->link; ?>" class="btn btn-secondary"> Details  </a></p>
+							</div> <!-- action-wrap.// -->
+						</aside> <!-- col.// -->
+					</div> <!-- row.// -->
+					</div> <!-- card-body .// -->
+				</article> <!-- card product .// -->
+			<?php endforeach; ?>
 
 	</main> <!-- col.// -->
+	<div class="col-sm">
+		<?php echo $pagination; ?>
+
+	</div>
 	</div>
 	</div> <!-- container .//  -->
 	</section>

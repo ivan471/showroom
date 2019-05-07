@@ -8,10 +8,10 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="/showroom">Beranda</a>
+					<a class="nav-link" href="<?= base_url(); ?>">Beranda</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="profil">Profil Perusahaan</a>
+					<a class="nav-link" href="<?= base_url().'profil' ?>">Profil Perusahaan</a>
 				</li>
 			</ul>
 		</div>
@@ -24,9 +24,7 @@
 		<div class="input-group w-100">
 				<input type="text" class="form-control" style="width:50%;" placeholder="Search">
 				<div class="input-group-append">
-					<button class="btn btn-warning" type="submit"onclick="pencarian">
-						<i class="fa fa-search"></i> Search
-					</button>
+					<a class="btn btn-warning" href="<?= base_url();  ?>pencarian" role="button"><i class="fa fa-search"></i></a>
 				</div>
 			</div>
 	</form> <!-- search-wrap .end// -->

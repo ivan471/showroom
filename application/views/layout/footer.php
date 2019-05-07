@@ -41,8 +41,8 @@
 <!-- ========================= FOOTER END // ========================= -->
 
 <!-- Bootstrap core JavaScript -->
-<script src="<?= base_url('asets/js/jquery.min.js') ?>"></script>
-<script src="<?= base_url('asets/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= base_url().'asets/js/jquery.min.js' ?>"></script>
+<script src="<?= base_url().'asets/js/bootstrap.bundle.min.js' ?>"></script>
 </body>
 
 </html>
