@@ -42,63 +42,23 @@
     <!--First slide-->
     <div class="carousel-item active">
       <div id="slider-rekomendasi"class="row">
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 1</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
 
+        <?php $i = 0; foreach ($terbaru as $baru) :
+          if ($i == 5) { continue; }?>
         <div class="col-md-4">
           <div class="card mb-2">
             <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
+              src="<?= $baru['gambar1']; ?>"
               alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Card title 2</h4>
-              <p class="card-text">Rp.250.000.000</p>
+              <h4 class="card-title"><?= $baru['nama']; ?></h4>
+              <p class="card-text"><?= $baru['harga']; ?></p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 3</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 4</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 5</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
+      <?php
+      $i++;
+    endforeach;?>
       </div>
     </div>
     <!--/.First slide-->
@@ -106,86 +66,27 @@
     <!--Second slide-->
     <div class="carousel-item">
       <div id="slider-rekomendasi"class="row">
+        <?php $i = 5; foreach ($terbaru as $baru) :
+         if ($i == 10) { break; }?>
         <div class="col-md-4">
           <div class="card mb-2">
             <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
+              src="<?= $baru['gambar1']; ?>"
               alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Card title 1</h4>
-              <p class="card-text">Rp.250.000.000</p>
+              <h4 class="card-title"><?= $baru['nama']; ?></h4>
+              <p class="card-text"><?= $baru['harga']; ?></p>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 2</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 3</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
+      <?php
+      $i++;
+      endforeach; ?>
       </div>
     </div>
     <!--/.Second slide-->
 
-    <!--Third slide-->
-    <div class="carousel-item">
-      <div id="slider-rekomendasi" class="row">
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 1</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 2</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="asets/img/icon/honda.jpeg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title 3</h4>
-              <p class="card-text">Rp.250.000.000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/.Third slide-->
   </div>
   <div class="controls pull-right hidden-xs">
   <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">

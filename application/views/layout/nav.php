@@ -22,10 +22,14 @@
 <div id="search"class="col-lg-11-24 col-sm-8">
 	<form action="pencarian" class="py-1">
 		<div class="input-group w-100">
-				<input type="text" class="form-control" style="width:50%;" placeholder="Search">
+			<form action="<?php echo base_url('pencarian')?>" action="GET">
+					<input type="text" class="form-control" id="cari" name="cari" placeholder="cari" >
 				<div class="input-group-append">
-					<a class="btn btn-warning" href="<?= base_url();  ?>pencarian" role="button"><i class="fa fa-search"></i></a>
+					<button class="btn btn-primary" type="submit" name="button"><i class="fa fa-search"></i></button>
+
 				</div>
+			</form>
+
 			</div>
 	</form> <!-- search-wrap .end// -->
 </div> <!-- col.// -->

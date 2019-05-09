@@ -6,12 +6,12 @@ class Pencarian extends CI_Controller {
 		$this->load->library('pagination');
     $this->load->model('model_mobil');
   }
-	public function index()
+	public function index( )
 	{
 
-			$config['base_url'] = site_url('pencarian/index'); //site url
+			$config['base_url'] = site_url('pencarian'); //site url
 			$config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
-			 $config['per_page'] = 5;  //show record per halaman
+			 $config['per_page'] = 10;  //show record per halaman
 			 $config["uri_segment"] = 3;  // uri parameter
 			 $choice = $config["total_rows"] / $config["per_page"];
 			 $config["num_links"] = floor($choice);

@@ -10,7 +10,8 @@ class Home extends CI_Controller {
 	//
 	public function index()
 	{
-		$this->load->template( 'halamanutama' );
+    $data['terbaru'] = $this->model_mobil->terbaru();
+		$this->load->template( 'halamanutama', $data );
 		//$this->load->view('halamanutama');
 	}
   public function detail( $link )

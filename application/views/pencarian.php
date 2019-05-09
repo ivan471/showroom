@@ -113,15 +113,15 @@
 		</aside> <!-- col.// -->
 
 		<main class="col-sm-9">
-			<?php foreach ($data->result() as $s ) : ?>
+			<?php foreach ($data as $s ) : ?>
 			<article class="card card-product">
 				<div class="card-body">
 					<div class="row">
 						<aside class="col-sm-4">
-							<div class="img-wrap"><img src="<?php echo $s->gambar1;  ?>" width="265" height="210"></div>
+							<div class="img-wrap"><img src="<?php echo $s['gambar1'];  ?>" width="265" height="210"></div>
 						</aside> <!-- col.// -->
 						<article class="col-sm-5">
-							<h4 class="title"><?php echo $s->nama; ?></h4>
+							<h4 class="title"><?php echo $s['nama']; ?></h4>
 							<div class="rating-wrap  mb-2">
 								<ul class="rating-stars">
 									<li style="width:80%" class="stars-active">
@@ -139,24 +139,24 @@
 							</div> <!-- rating-wrap.// -->
 							<dl class="dlist-align">
 								<dt><i class="fas fa-palette"></i>Warna</dt>
-					  	<dd><?php echo $s->warna; ?></dd>
+					  	<dd><?php echo $s['warna']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 							<dl class="dlist-align">
 							  <dt><i class="far fa-calendar-alt"></i>Tahun</dt>
-							  <dd><?php echo $s->tahun; ?></dd>
+							  <dd><?php echo $s['tahun']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 							<dl class="dlist-align">
 							  <dt><img src="<?= base_url().'asets/icon/transmisi.gif' ?>" width="15" height="15">Transmisi</dt>
-							  <dd><?php echo $s->transmisi; ?></dd>
+							  <dd><?php echo $s['transmisi']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 						</article> <!-- col.// -->
 						<aside class="col-sm-3 border-left">
 							<div class="action-wrap">
 								<div class="price-wrap h4">
-									<span class="price">Rp.<?php echo number_format($s->harga, 0, ".", ".") ?> </span>
+									<span class="price">Rp.<?php echo number_format($s['harga'], 0, ".", ".") ?> </span>
 								</div> <!-- info-price-detail // -->
 								<br><br><br><br><br>
-								<p><a href="<?= base_url().'detail/'.$s->link; ?>" class="btn btn-secondary"> Details  </a></p>
+								<p><a href="<?= base_url().'detail/'.$s['link']; ?>" class="btn btn-secondary"> Details  </a></p>
 							</div> <!-- action-wrap.// -->
 						</aside> <!-- col.// -->
 					</div> <!-- row.// -->

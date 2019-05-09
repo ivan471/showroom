@@ -203,11 +203,9 @@ dt {
 		font-style: normal;
 }
 .gallery-wrap .img-big-wrap img {
-    height: 450px;
     width: 100%;
     display: inline-block;
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in;
+    cursor:default;
 }
 img {
     vertical-align: middle;
