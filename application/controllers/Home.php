@@ -20,7 +20,8 @@ class Home extends CI_Controller {
     $query = $this->db->query("SELECT * from tb_mobil where link='".$link."' ");
     $row = $query->row();
     $var1 = $row->model;
-    $data_link2 =$this->model_mobil->tampilsama( $var1 );
+    $var2 = $row->nama;
+    $data_link2 =$this->model_mobil->tampilsama( $var1, $var2 );
     $data['mobil'] = $data_link;
     $data['model'] = $data_link2;
     $this->load->template('detail', $data);

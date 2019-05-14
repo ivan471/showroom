@@ -6,11 +6,11 @@ class Pencarian extends CI_Controller {
 		$this->load->library('pagination');
     $this->load->model('model_mobil');
   }
-	public function index( )
+	public function cari()
 	{
-
-			$config['base_url'] = site_url('pencarian'); //site url
-			$config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
+    	//$config['base_url'] = 'http://localhost/showroom/'; //site url
+      $config['base_url'] = site_url('pencarian'); //site url
+			 $config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
 			 $config['per_page'] = 10;  //show record per halaman
 			 $config["uri_segment"] = 3;  // uri parameter
 			 $choice = $config["total_rows"] / $config["per_page"];
@@ -39,6 +39,15 @@ class Pencarian extends CI_Controller {
 			$data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 			//panggil function get_mahasiswa_list yang ada pada mmodel mahasiswa_model.
 			 $data['data'] = $this->model_mobil->listpencarian($config["per_page"], $data['page']);
+       $data['jmlhlist1'] = $this->model_mobil->total_toyota();
+       $data['jmlhlist2'] = $this->model_mobil->total_honda();
+       $data['jmlhlist3'] = $this->model_mobil->total_suzuki();
+       $data['jmlhlist4'] = $this->model_mobil->total_nissan();
+       $data['jmlhlist5'] = $this->model_mobil->total_mitsubishi();
+       $data['jmlhlist6'] = $this->model_mobil->total_daihatsu();
+       $data['jmlhlist7'] = $this->model_mobil->total_mazda();
+       $data['jmlhlist8'] = $this->model_mobil->total_hino();
+
 			 $data['pagination'] = $this->pagination->create_links();
     //$data['search']=$this->model_mobil->listpencarian();
 		//	$data['judul']='Pencarian';
@@ -47,5 +56,6 @@ class Pencarian extends CI_Controller {
 			$this->load->view('pencarian' , $data);
 			$this->load->view('layout/footer');
 	}
+
 
 }

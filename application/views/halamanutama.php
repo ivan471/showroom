@@ -40,51 +40,48 @@
   <!--Slides-->
   <div class="carousel-inner" role="listbox">
     <!--First slide-->
-    <div class="carousel-item active">
-      <div id="slider-rekomendasi"class="row">
 
-        <?php $i = 0; foreach ($terbaru as $baru) :
-          if ($i == 5) { continue; }?>
+    <?php
+    $no = 1 ;
+    for ($n = 0; $n <3; $n++ ) {
+      $n++;
+      if ($n == 1) {
+        $class = 'active';
+      ?>
+
+
+      <?php}
+      else {
+        $class = '';
+      }
+      ?>
+    <div class="carousel-item <?php echo $class; ?>">
+      <div id="slider-rekomendasi"class="row">
+        <?php
+        foreach ($terbaru as $baru):
+          if ($baru['id'] == 5 ) {
+            continue;
+          }elseif( $baru['id'] == 10) {
+            break;
+          }
+          ?>
         <div class="col-md-4">
           <div class="card mb-2">
-            <img class="card-img-top"
-              src="<?= $baru['gambar1']; ?>"
-              alt="Card image cap">
+            <img class="card-img-top" src="<?= $baru['gambar1']; ?>" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title"><?= $baru['nama']; ?></h4>
               <p class="card-text"><?= $baru['harga']; ?></p>
             </div>
           </div>
         </div>
-      <?php
-      $i++;
-    endforeach;?>
+      <?php $v = $baru['id'];
+    endforeach; ?>
       </div>
     </div>
+    <?php } ?>
     <!--/.First slide-->
 
     <!--Second slide-->
-    <div class="carousel-item">
-      <div id="slider-rekomendasi"class="row">
-        <?php $i = 5; foreach ($terbaru as $baru) :
-         if ($i == 10) { break; }?>
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="<?= $baru['gambar1']; ?>"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><?= $baru['nama']; ?></h4>
-              <p class="card-text"><?= $baru['harga']; ?></p>
-            </div>
-          </div>
-        </div>
-      <?php
-      $i++;
-      endforeach; ?>
-      </div>
-    </div>
-    <!--/.Second slide-->
 
 
   </div>
@@ -208,82 +205,134 @@
           </div>
           <div class="row">
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/agya.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Agya">
+                <input type="image" src="<?= base_url() .'asets/img/list/agya.jpg'?>" alt="Submit button">
                 <h3>Toyota Agya</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/calya.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Calya">
+                <input type="image" src="<?= base_url() .'asets/img/list/calya.jpg'?>" alt="Submit button">
                 <h3>Toyota Calya</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?= base_url().'pencarian'?>" action="get">
               <center>
-                <img src="asets/img/list/avanza2.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Avansa">
+                <input type="image" src="<?= base_url() .'asets/img/list/avanza2.jpg'?>" alt="Submit">
                 <h3>Toyota Avanza</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/innova.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Innova">
+                <input type="image" src="<?= base_url() .'asets/img/list/innova.jpg'?>" alt="Submit button">
                 <h3>Toyota Innova</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/yaris.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Yaris">
+                <input type="image" src="<?= base_url() .'asets/img/list/yaris.jpg'?>" alt="Submit button">
                 <h3>Toyota Yaris</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/sienta.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Sienta">
+                <input type="image" src="<?= base_url() .'asets/img/list/sienta.jpg'?>" alt="Submit button">
                 <h3>Toyota Sienta</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/alphard.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Alphard">
+                <input type="image" src="<?= base_url() .'asets/img/list/alphard.jpg'?>" alt="Submit button">
                 <h3>Toyota Alphard</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/fortuner.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Fortuner">
+                <input type="image" src="<?= base_url() .'asets/img/list/fortuner.jpg'?>" alt="Submit button">
                 <h3>Toyota Fortuner</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/Rush.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Rush">
+                <input type="image" src="<?= base_url() .'asets/img/list/Rush.jpg'?>" alt="Submit button">
                 <h3>Toyota Rush</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/camry.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Camry">
+                <input type="image" src="<?= base_url() .'asets/img/list/camry.jpg'?>" alt="Submit button">
                 <h3>Toyota Camry</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/etios.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Etios Valco">
+                <input type="image" src="<?= base_url() .'asets/img/list/etios.jpg'?>" alt="Submit button">
                 <h3>Toyota Etios Valco</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/hilux2.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Hilux">
+                <input type="image" src="<?= base_url() .'asets/img/list/hilux2.jpg'?>" alt="Submit button">
                 <h3>Toyota Hilux</h3>
               </center>
+              </form>
             </div>
             <div id="gmbr" class="col-md-3">
+              <form action="<?php echo base_url('pencarian')?>" action="GET">
               <center>
-                <img src="asets/img/list/vios.jpg" alt="">
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota Vios">
+                <input type="image" src="<?= base_url() .'asets/img/list/vios.jpg'?>" alt="Submit button">
                 <h3>Toyota Vios</h3>
               </center>
+              </form>
             </div>
           </div>
         </div>

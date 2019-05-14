@@ -22,9 +22,23 @@
 							<div style="" class="filter-content collapse show" id="collapse22">
 								<div class="card-body">
 									<ul class="list-unstyled list-lg">
-										<li><a href="#">Tahun Terlama<span class="float-right badge badge-light round">142</span> </a></li>
-										<li><a href="#">Tahun Terbaru<span class="float-right badge badge-light round">3</span>  </a></li>
-										<li><a href="#">Post Terbaru<span class="float-right badge badge-light round">32</span>  </a></li>
+										<li>
+											<form id="1" action="<?= base_url().'pencarian' ?>" method="get">
+												<input type="hidden" name="data" value="thn_lama">
+												<a href="#"onclick="document.getElementById('1').submit();">Tahun Terlama</a>
+										</form>
+										</li>
+										<li>
+											<form id="2" action="<?= base_url().'pencarian' ?>" method="get">
+												<input type="hidden" name="data" value="thn_baru">
+												<a href="#"onclick="document.getElementById('2').submit();">Tahun Terbaru</a>
+											</form>
+										</li>
+										<li><form id="3" action="<?= base_url().'pencarian' ?>" method="get">
+											<input type="hidden" name="data" value="baru">
+											<a href="#"onclick="document.getElementById('3').submit();">Post Terbaru</a>
+										</form>
+									</li>
 										<li><a href="#">Another item <span class="float-right badge badge-light round">12</span>  </a></li>
 									</ul>
 								</div> <!-- card-body.// -->
@@ -32,80 +46,110 @@
 						</article> <!-- card-group-item.// -->
 						<article class="card-group-item">
 							<header class="card-header">
-								<a href="#" data-toggle="collapse" data-target="#collapse33">
+								<a href="" data-toggle="collapse" data-target="#collapse33">
 									<i class="icon-action fa fa-chevron-down"></i>
 									<h6 class="title">Berdasarkan Harga</h6>
 								</a>
 							</header>
 							<div class="filter-content collapse show" id="collapse33">
 								<div class="card-body">
-									<div class="form-group col-md-6">
+									<form class="" action="<?php base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="harga">
+										<div class="form-group col-md-6">
 				  					<label>Min</label>
-				  					<input class="form-control" placeholder="Rp.0" type="number">
+				  					<input class="form-control" placeholder="Rp.0" type="number" name="min" required>
 									</div>
 									<div class="form-group col-md-6">
 				  					<label>Max</label>
-				  					<input class="form-control" placeholder="Rp.800.000.000" type="number">
+				  					<input class="form-control" placeholder="Rp.800.000.000" type="number" name="max" required>
 									</div>
-									<button class="btn btn-block btn-outline-primary">Apply</button>
+									<button type="submit" class="btn btn-block btn-outline-primary">Apply</button>
+								</form>
 									<ul id="list1"class="list-unstyled list-lg">
-										<li><a href="#">Termahal<span class="float-right badge badge-light round">20</span></a></li>
-										<li><a href="#">Termurah<span class="float-right badge badge-light round">11</span></a></li>
+										<li>
+											<form id="4" action="<?= base_url().'pencarian' ?>" method="get">
+												<input type="hidden" name="data" value="mahal">
+												<a href="#"onclick="document.getElementById('4').submit();">Termahal</a>
+											</form>
+										</li>
+										<li>
+											<form id="5" action="<?= base_url().'pencarian' ?>" method="get">
+												<input type="hidden" name="data" value="murah">
+												<a href="#"onclick="document.getElementById('5').submit();">Termurah</a>
+											</form>
+										</li>
 									</ul>
 								</div> <!-- card-body.// -->
 							</div> <!-- collapse .// -->
 						</article> <!-- card-group-item.// -->
+
 				<article class="card-group-item">
 					<header class="card-header">
-						<a href="#" data-toggle="collapse" data-target="#collapse44">
+						<a href="" data-toggle="collapse" data-target="#collapse44">
 							<i class="icon-action fa fa-chevron-down"></i>
 							<h6 class="title">Berdasarkan Merk </h6>
 						</a>
 					</header>
 					<div class="filter-content collapse show" id="collapse44">
 						<div class="card-body">
-							<form>
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Toyota</span>
-								</label>  <!-- form-check.// -->
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Honda</span>
-								</label> <!-- form-check.// -->
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Nissan</span>
-								</label>  <!-- form-check.// -->
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Suzuki</span>
-								</label>  <!-- form-check.// -->
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Mitsubishi</span>
-								</label>  <!-- form-check.// -->
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Daihatsu</span>
-								</label>  <!-- form-check.// -->
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Mazda</span>
-								</label>  <!-- form-check.// -->
-								<label class="form-check">
-				  				<input class="form-check-input" value="" type="checkbox">
-				  				<span class="form-check-label">
-				  				<span class="float-right badge badge-light round">0</span>Hino</span>
-								</label>  <!-- form-check.// -->
-							</form>
+							<ul id="list1"class="list-unstyled list-lg">
+								<li>
+									<form id="6" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Toyota">
+										<a href="#"onclick="document.getElementById('6').submit();">Toyota<span class="float-right badge badge-light round"><?= $jmlhlist1['jmlh']; ?></span></a>
+									</form>
+								</li>
+								<li>
+									<form id="7" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Honda">
+										<a href="#"onclick="document.getElementById('7').submit();">Honda<span class="float-right badge badge-light round"><?= $jmlhlist2['jmlh']; ?></span></a>
+									</form>
+								</li>
+								<li>
+									<form id="8" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Suzuki">
+										<a href="#"onclick="document.getElementById('8').submit();">Suzuki<span class="float-right badge badge-light round"><?= $jmlhlist3['jmlh']; ?></span></a>
+									</form>
+								</li>
+								<li>
+									<form id="9" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Nissan">
+										<a href="#"onclick="document.getElementById('9').submit();">Nissan<span class="float-right badge badge-light round"><?= $jmlhlist4['jmlh']; ?></span></a>
+									</form>
+								</li>
+								<li>
+									<form id="10" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Honda">
+										<a href="#"onclick="document.getElementById('10').submit();">Mitsubishi<span class="float-right badge badge-light round"><?= $jmlhlist5['jmlh']; ?></span></a>
+									</form>
+								</li>
+								<li>
+									<form id="11" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Honda">
+										<a href="#"onclick="document.getElementById('11').submit();">Daihatsu<span class="float-right badge badge-light round"><?= $jmlhlist6['jmlh']; ?></span></a>
+									</form>
+								</li>
+								<li>
+									<form id="12" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Mazda">
+										<a href="#"onclick="document.getElementById('12').submit();">Mazda<span class="float-right badge badge-light round"><?= $jmlhlist7['jmlh']; ?></span></a>
+									</form>
+								</li>
+								<li>
+									<form id="13" action="<?= base_url().'pencarian' ?>" method="get">
+										<input type="hidden" name="data" value="cari">
+										<input type="hidden" name="nilai" value="Hino">
+										<a href="#"onclick="document.getElementById('13').submit();">Hino<span class="float-right badge badge-light round"><?= $jmlhlist8['jmlh']; ?></span></a>
+									</form>
+								</li>
+							</ul>
 						</div> <!-- card-body.// -->
 					</div> <!-- collapse .// -->
 				</article> <!-- card-group-item.// -->
