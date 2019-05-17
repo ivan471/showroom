@@ -16,7 +16,7 @@
 							<header class="card-header">
 								<a class="" aria-expanded="true" href="#" data-toggle="collapse" data-target="#collapse22">
 									<i class="icon-action fa fa-chevron-down"></i>
-									<h6 class="title">Berdasarkan Kategory</h6>
+									<h6 class="title">Berdasarkan Kategori</h6>
 								</a>
 							</header>
 							<div style="" class="filter-content collapse show" id="collapse22">
@@ -39,8 +39,7 @@
 											<a href="#"onclick="document.getElementById('3').submit();">Post Terbaru</a>
 										</form>
 									</li>
-										<li><a href="#">Another item <span class="float-right badge badge-light round">12</span>  </a></li>
-									</ul>
+										</ul>
 								</div> <!-- card-body.// -->
 							</div> <!-- collapse .// -->
 						</article> <!-- card-group-item.// -->
@@ -162,36 +161,21 @@
 				<div class="card-body">
 					<div class="row">
 						<aside class="col-sm-4">
-							<div class="img-wrap"><img src="<?php echo $s['gambar1'];  ?>" width="265" height="210"></div>
+							<div class="img-wrap"><img id="t-gmbr" src="<?php echo $s['gambar1'];  ?>" width="265" height="210"></div>
 						</aside> <!-- col.// -->
 						<article class="col-sm-5">
 							<h4 class="title"><?php echo $s['nama']; ?></h4>
-							<div class="rating-wrap  mb-2">
-								<ul class="rating-stars">
-									<li style="width:80%" class="stars-active">
-										<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-										<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</li>
-									<li>
-										<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-										<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</li>
-								</ul>
-								<div class="label-rating">0 reviews</div>
-							</div> <!-- rating-wrap.// -->
 							<dl class="dlist-align">
 								<dt><i class="fas fa-palette"></i>Warna</dt>
 					  	<dd><?php echo $s['warna']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 							<dl class="dlist-align">
-							  <dt><i class="far fa-calendar-alt"></i>Tahun</dt>
+							  <dt><i  class="far fa-calendar-alt " style="color:#31d6ba"></i>Tahun</dt>
 							  <dd><?php echo $s['tahun']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 							<dl class="dlist-align">
 							  <dt><img src="<?= base_url().'asets/icon/transmisi.gif' ?>" width="15" height="15">Transmisi</dt>
-							  <dd><?php echo $s['transmisi']; ?></dd>
+							  <dd> <?php echo $s['transmisi']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 						</article> <!-- col.// -->
 						<aside class="col-sm-3 border-left">

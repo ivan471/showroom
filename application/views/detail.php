@@ -3,11 +3,14 @@
 <nav class="mb-3">
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="<?= base_url() ?>">Beranda</a></li>
-    <li class="breadcrumb-item"><a href="#"><?= $mobil['merk']; ?></a></li>
-    <li class="breadcrumb-item"><a href="#"><?= $mobil['model'];  ?></a></li>
+    <li class="breadcrumb-item">
+    <a href="#" onclick="document.getElementById('merk').submit();"><?= $mobil['merk']; ?></a></li>
+    <li class="breadcrumb-item">
+    <a href="#"onclick="document.getElementById('model').submit();"><?= $mobil['model'];  ?></a></li>
     <li class="breadcrumb-item active" aria-current="page"><?= $mobil['nama'];  ?></li>
 </ol>
 </nav>
+
 <div class="row">
 <div class="col-xl-10 col-md-9 col-sm-12">
 <main class="card">
@@ -33,7 +36,7 @@
           <div class="mySlides">
             <img src="<?= $mobil['gambar6'];  ?>" style="width:100%">
           </div>
-          <div class="row">
+          <div class="row galery">
             <div class="column">
               <img class="demo cursor" src="<?= $mobil['gambar1'];  ?>" style="width:100%" onclick="currentSlide(1)">
             </div>
@@ -94,7 +97,7 @@
 
 				<div class="mb-3">
 					<var class="price h3 text-warning">
-						<span class="currency">Rp.</span><span class="num"><?= $mobil['harga'];  ?></span>
+						<span class="currency">Rp.</span><?php echo number_format($mobil['harga'], 0, ".", ".") ?>
 					</var>
 				</div> <!-- price-detail-wrap .// -->
         <dl class="row">
@@ -102,7 +105,8 @@
         	<dd class="col-sm-7 garis"><?= $mobil['merk'];  ?></dd>
           <dt class="col-sm-5 garis">Model</dt>
         	<dd class="col-sm-7 garis"><?= $mobil['model'];  ?></dd>
-
+          <dt class="col-sm-5 garis">Varian</dt>
+          <dd class="col-sm-7 garis"><?= $mobil['varian'];  ?> </dd>
         	<dt class="col-sm-5 garis">Warna</dt>
           <dd class="col-sm-7 garis"><?= $mobil['warna'];  ?> </dd>
 
@@ -124,23 +128,7 @@
         	<dt class="col-sm-5 garis">Masa Berlaku STNK</dt>
         	<dd class="col-sm-7 garis"><?= $mobil['masa_berlaku_stnk'];  ?> </dd>
         </dl>
-<div class="rating-wrap">
-
-	<ul class="rating-stars">
-		<li style="width:80%" class="stars-active">
-			<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-			<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-			<i class="fa fa-star"></i>
-		</li>
-		<li>
-			<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-			<i class="fa fa-star"></i> <i class="fa fa-star"></i>
-			<i class="fa fa-star"></i>
-		</li>
-	</ul>
-	<div class="label-rating">0 reviews</div>
-</div> <!-- rating-wrap.// -->
-	<hr>
+<hr>
 	<a href="#" class="btn  btn-warning"> <i class="fa fa-envelope"></i> Kontact Supplier </a>
 <!-- short-info-wrap .// -->
 </article> <!-- card-body.// -->
@@ -161,18 +149,16 @@
 </div> <!-- col // -->
 <aside class="col-xl-2 col-md-3 col-sm-12">
 <div class="card mt-3">
-	<div class="card-header">
-	    Jenis yang Sama
-	</div>
+	<div class="card-header">Model yang Sama</div>
 	<div class="card-body row">
   <?php foreach ($model as $m ) : ?>
     <div class="col-md-12 col-sm-3">
 	<figure class="item border-bottom mb-3">
-			<a href="#" class="img-wrap"> <img src="<?= $m['gambar1'] ?>" width='100%' height='75%' class="img-md"></a>
+			<a href="#" class="img-wrap"> <img id="gmbrsama" src="<?= $m['gambar1'] ?>" width='100%' height='75%' class="img-md"></a>
 			<figcaption class="info-wrap">
 				<a href="<?= base_url().'detail/'.$m['link'] ?>" class="title"><?= $m['nama'] ?></a>
 				<div class="price-wrap mb-3">
-					<span class="price-new">Rp.</span><span class="num"><?= $m['harga'];  ?></span>
+					<span class="price-new">Rp.</span><?php echo number_format($m['harga'], 0, ".", ".") ?>
 				</div> <!-- price-wrap.// -->
 			</figcaption>
 	</figure> <!-- card-product // -->
@@ -184,3 +170,9 @@
 </div> <!-- row.// -->
 </div><!-- container // -->
 </section>
+<form id="model" action="<?= base_url().'pencarian' ?>" method="get">
+  <input type="hidden" name="cari" value="<?= $mobil['model'];  ?>">
+</form>
+<form id="merk" action="<?= base_url().'pencarian' ?>" method="get">
+  <input type="hidden" name="cari" value="<?= $mobil['merk'];  ?>">
+</form>

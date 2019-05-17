@@ -9,7 +9,8 @@ class Pencarian extends CI_Controller {
 	public function cari()
 	{
     	//$config['base_url'] = 'http://localhost/showroom/'; //site url
-      $config['base_url'] = site_url('pencarian'); //site url
+
+       $config['base_url'] = site_url('pencarian'); //site url
 			 $config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
 			 $config['per_page'] = 10;  //show record per halaman
 			 $config["uri_segment"] = 3;  // uri parameter
@@ -51,6 +52,7 @@ class Pencarian extends CI_Controller {
 			 $data['pagination'] = $this->pagination->create_links();
     //$data['search']=$this->model_mobil->listpencarian();
 		//	$data['judul']='Pencarian';
+
 			$this->load->view('layout/header');
 			$this->load->view('layout/nav');
 			$this->load->view('pencarian' , $data);

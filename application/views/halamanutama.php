@@ -7,17 +7,17 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('https://www.wsupercars.com/wallpapers/BMW/2018-BMW-M8-GTE-Racecar-V4-1080.jpg')">
+        <div class="carousel-item active" style="background-image: url('asets/img/depan/depan.jpeg'); background-position: center;">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('https://i.pinimg.com/originals/41/a5/04/41a50468a8ad24c5f8fa183fa15f27a5.jpg')">
+        <div class="carousel-item" style="background-image: url('asets/img/depan/depan2.jpeg')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('https://i.pinimg.com/originals/b0/88/d8/b088d826b6e887ff06cd8f277b26a83a.jpg')">
+        <div class="carousel-item" style="background-image: url('asets/img/depan/depan3.jpeg')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -40,57 +40,47 @@
   <!--Slides-->
   <div class="carousel-inner" role="listbox">
     <!--First slide-->
-
-    <?php
-    $no = 1 ;
-    for ($n = 0; $n <3; $n++ ) {
-      $n++;
-      if ($n == 1) {
-        $class = 'active';
-      ?>
-
-
-      <?php}
-      else {
-        $class = '';
-      }
-      ?>
-    <div class="carousel-item <?php echo $class; ?>">
+    <div class="carousel-item active">
       <div id="slider-rekomendasi"class="row">
-        <?php
-        foreach ($terbaru as $baru):
-          if ($baru['id'] == 5 ) {
-            continue;
-          }elseif( $baru['id'] == 10) {
-            break;
-          }
-          ?>
+        <?php $i = 0; foreach ($terbaru as $baru) :?>
         <div class="col-md-4">
           <div class="card mb-2">
             <img class="card-img-top" src="<?= $baru['gambar1']; ?>" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title"><?= $baru['nama']; ?></h4>
-              <p class="card-text"><?= $baru['harga']; ?></p>
+              <h4 class="card-title"><a href="<?= base_url().'detail/'.$baru['link']; ?>"><?= $baru['nama']; ?></a></h4>
+              <p class="card-text">Rp.<?php echo number_format($baru['harga'], 0, ".", ".") ?></p>
             </div>
           </div>
         </div>
-      <?php $v = $baru['id'];
-    endforeach; ?>
+      <?php endforeach; ?>
       </div>
     </div>
-    <?php } ?>
     <!--/.First slide-->
-
+    <div class="carousel-item">
+      <div id="slider-rekomendasi"class="row">
+        <?php $i = 0; foreach ($terbaru2 as $baru2) :?>
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top" src="<?= $baru2['gambar1']; ?>" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title"><a href="<?= base_url().'detail/'.$baru2['link']; ?>"><?= $baru2['nama']; ?></a></h4>
+              <p class="card-text">Rp.<?php echo number_format($baru2['harga'], 0, ".", ".") ?></p>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
+      </div>
+    </div>
     <!--Second slide-->
 
 
   </div>
   <div class="controls pull-right hidden-xs">
-  <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
-  <i class="fa fa-angle-left"></i></a>
- <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
-   <i class="fa fa-angle-right"></i></a>
- </div>
+    <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
+    <i class="fas fa-arrow-left"></i></a>
+    <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
+    <i class="fas fa-arrow-right"></i></a>
+  </div>
 </div>
 <!--/.Carousel Wrapper-->
 <footer class="py-3 bg-dark"></footer><br>
@@ -150,16 +140,16 @@
 		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/daihatsu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
 	</div>
 	</li>
-	<li class="col-6 col-md-3">
+  <li class="col-6 col-md-3">
 	<div class="card-body">
-		<p class="word-limit">MAZDA</p>
-		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/')  ?>" width="100" height="100" data-toggle="modal" data-target="#mazda">
+		<p class="word-limit">ISUZU</p>
+		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/isuzu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#isuzu">
 	</div>
 	</li>
 	<li class="col-6 col-md-3">
 	<div class="card-body">
 		<p class="word-limit">HINO</p>
-		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/')  ?>" width="100" height="100" data-toggle="modal" data-target="#hino">
+		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/hino.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#hino">
   </div>
 	</li>
 </ul>
@@ -228,7 +218,7 @@
               <form action="<?= base_url().'pencarian'?>" action="get">
               <center>
                 <input type="hidden" name="data" value="cari">
-                <input type="hidden" name="nilai" value="Toyota Avansa">
+                <input type="hidden" name="nilai" value="Toyota Avanza">
                 <input type="image" src="<?= base_url() .'asets/img/list/avanza2.jpg'?>" alt="Submit">
                 <h3>Toyota Avanza</h3>
               </center>
@@ -339,284 +329,472 @@
       </div>
     </div>
     <div class="modal fade" id="honda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">Mobil Honda</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="row">
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/brio.jpg" alt="">
-                  <h3>Honda Brio</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/mobilio.jpg" alt="">
-                  <h3>Honda Mobilio</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/jazz.jpg" alt="">
-                  <h3>Honda Jazz</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/crv.jpg" alt="">
-                  <h3>Honda CR-V</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/hrv.jpg" alt="">
-                  <h3>Honda HR-V</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/civic.jpg" alt="">
-                  <h3>Honda Civic</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/city.jpg" alt="">
-                  <h3>Honda City</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/accord.jpg" alt="">
-                  <h3>Honda Accord</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/brv.jpg" alt="">
-                  <h3>Honda BR-V</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/odyseey.jpg" alt="">
-                  <h3>Honda Odyssey</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/crz.jpg" alt="">
-                  <h3>Honda CR-Z</h3>
-                </center>
-              </div>
-              <div id="gmbr" class="col-md-3">
-                <center>
-                  <img src="asets/img/list/freed.jpg" alt="">
-                  <h3>Honda Freed</h3>
-                </center>
-              </div>
-          </div>
-        </div>
-      </div>
-        </div>
-        <div class="modal fade" id="suzuki" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Mobil Suzuki</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="row">
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/apv.jpg" alt="">
-                    <h3>Suzuki APV</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/ertiga.jpg" alt="">
-                    <h3>Suzuki Ertiga</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/karimun.jpg" alt="">
-                    <h3>Suzuki Karimun Wagon R</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/vitara.jpg" alt="">
-                    <h3>Suzuki Grand Vitara</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/carry.jpg" alt="">
-                    <h3>Suzuki Carry</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/swift.jpg" alt="">
-                    <h3>Suzuki Swift</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/sx4.jpg" alt="">
-                    <h3>Suzuki SX-4</h3>
-                  </center>
-                </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="modal fade" id="nissan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Mobil Nissan</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="row">
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/grandlivina.jpg" alt="">
-                    <h3>Nissan Grand Livina</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/march.jpg" alt="">
-                    <h3>Nissan March</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/xtrail.jpg" alt="">
-                    <h3>Nissan X-TRAIL</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/serena.jpg" alt="">
-                    <h3>Nissan Serena</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/evalia.jpg" alt="">
-                    <h3>Nissan Evalia</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/navara.jpg" alt="">
-                    <h3>Nissan Navara</h3>
-                  </center>
-                </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="modal fade" id="mitsubishi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Mobil Mitsubishi</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="row">
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/pajero.jpg" alt="">
-                    <h3>Mitsubishi Pajero Sport</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/outlander.jpg" alt="">
-                    <h3>Mitsubishi Outlander</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/mirage.jpg" alt="">
-                    <h3>Mitsubishi Mirage</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/triton.jpg" alt="">
-                    <h3>Mitsubishi Triton</h3>
-                  </center>
-                </div>
-                <div id="gmbr" class="col-md-3">
-                  <center>
-                    <img src="asets/img/list/xpander.jpg" alt="">
-                    <h3>Mitsubishi Xpander</h3>
-                  </center>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="modal fade" id="daihatsu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Mobil Daihatsu</h4>
+                  <h4 class="modal-title" id="myModalLabel">Mobil Honda</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="row">
                   <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
-                      <img src="asets/img/list/ayla.jpg" alt="">
-                      <h3>Daihatsu ayla</h3>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda Brio">
+                      <input type="image" src="<?= base_url() .'asets/img/list/brio.jpg'?>" alt="Submit button">
+                      <h3>Honda Brio</h3>
                     </center>
+                    </form>
                   </div>
                   <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
-                      <img src="asets/img/list/sigra.jpg" alt="">
-                      <h3>Daihatsu Sigra</h3>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda Mobilio">
+                      <input type="image" src="<?= base_url() .'asets/img/list/mobilio.jpg'?>" alt="Submit button">
+                      <h3>Honda Mobilio</h3>
                     </center>
+                    </form>
                   </div>
                   <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
-                      <img src="asets/img/list/xenia.jpg" alt="">
-                      <h3>Daihatsu Xenia</h3>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda Jazz">
+                      <input type="image" src="<?= base_url() .'asets/img/list/jazz.jpg'?>" alt="Submit button">
+                      <h3>Honda Jazz</h3>
                     </center>
+                    </form>
                   </div>
                   <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
-                      <img src="asets/img/list/terios.jpg" alt="">
-                      <h3>Daihatsu Terios</h3>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda CR-V">
+                      <input type="image" src="<?= base_url() .'asets/img/list/crv.jpg'?>" alt="Submit button">
+                      <h3>Honda CR-V</h3>
                     </center>
+                    </form>
                   </div>
                   <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
-                      <img src="asets/img/list/granmax.jpg" alt="">
-                      <h3>Daihatsu Granmax</h3>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda HR-V">
+                      <input type="image" src="<?= base_url() .'asets/img/list/Hrv.jpg'?>" alt="Submit button">
+                      <h3>Honda HR-V</h3>
                     </center>
+                    </form>
                   </div>
                   <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
-                      <img src="asets/img/list/luxio.jpg" alt="">
-                      <h3>Daihatsu Luxio</h3>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda Civic">
+                      <input type="image" src="<?= base_url() .'asets/img/list/civic.jpg'?>" alt="Submit button">
+                      <h3>Honda Civic</h3>
                     </center>
+                    </form>
+                    </div>
+                  <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
+                    <center>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda City">
+                      <input type="image" src="<?= base_url() .'asets/img/list/city.jpg'?>" alt="Submit button">
+                      <h3>Honda City</h3>
+                    </center>
+                    </form>
+                    </div>
+                  <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
+                    <center>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda Accord">
+                      <input type="image" src="<?= base_url() .'asets/img/list/accord2.jpg'?>" alt="Submit button">
+                      <h3>Honda Accord</h3>
+                    </center>
+                    </form>
                   </div>
                   <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
-                      <img src="asets/img/list/sirion.jpg" alt="">
-                      <h3>Daihatsu Sirion</h3>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda BR-V">
+                      <input type="image" src="<?= base_url() .'asets/img/list/brv.jpg'?>" alt="Submit button">
+                      <h3>Honda BR-V</h3>
                     </center>
+                    </form>
                   </div>
+                  <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
+                    <center>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda Odyssey">
+                      <input type="image" src="<?= base_url() .'asets/img/list/odyseey.jpg'?>" alt="Submit button">
+                      <h3>Honda Odyssey</h3>
+                    </center>
+                    </form>
+                    </div>
+                  <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
+                    <center>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda CR-Z">
+                      <input type="image" src="<?= base_url() .'asets/img/list/crz.jpg'?>" alt="Submit button">
+                      <h3>Honda CR-Z</h3>
+                    </center>
+                    </form>
+                  </div>
+                  <div id="gmbr" class="col-md-3">
+                    <form action="<?php echo base_url('pencarian')?>" action="GET">
+                    <center>
+                      <input type="hidden" name="data" value="cari">
+                      <input type="hidden" name="nilai" value="Honda Freed">
+                      <input type="image" src="<?= base_url() .'asets/img/list/freed.jpg'?>" alt="Submit button">
+                      <h3>Honda Freed</h3>
+                    </center>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+            </div>
+            <div class="modal fade" id="suzuki" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Mobil Suzuki</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="row">
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Suzuki APV">
+                        <input type="image" src="<?= base_url() .'asets/img/list/apv.jpg'?>" alt="Submit button">
+                        <h3>Suzuki APV</h3>
+                      </center>
+                      </form>
+                      </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Suzuki Ertiga">
+                        <input type="image" src="<?= base_url() .'asets/img/list/ertiga.jpg'?>" alt="Submit button">
+                        <h3>Suzuki Ertiga</h3>
+                      </center>
+                      </form>
+                                      </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Suzuki Karimun Wagon R">
+                        <input type="image" src="<?= base_url() .'asets/img/list/karimun.jpg'?>" alt="Submit button">
+                        <h3>Suzuki Karimun Wagon R</h3>
+                      </center>
+                      </form>
+
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Suzuki Grand Vitara">
+                        <input type="image" src="<?= base_url() .'asets/img/list/vitara.jpg'?>" alt="Submit button">
+                        <h3>Suzuki Grand Vitara</h3>
+                      </center>
+                      </form>
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Suzuki Carry">
+                        <input type="image" src="<?= base_url() .'asets/img/list/carry.jpg'?>" alt="Submit button">
+                        <h3>Suzuki Carry</h3>
+                      </center>
+                      </form>
+
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Suzuki Swift">
+                        <input type="image" src="<?= base_url() .'asets/img/list/swift.jpg'?>" alt="Submit button">
+                        <h3>Suzuki Swift</h3>
+                      </center>
+                      </form>
+                                      </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Suzuki SX-4">
+                        <input type="image" src="<?= base_url() .'asets/img/list/sx4.jpg'?>" alt="Submit button">
+                        <h3>Suzuki SX-4</h3>
+                      </center>
+                      </form>
+                        </div>
                 </div>
               </div>
             </div>
             </div>
+            <div class="modal fade" id="nissan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Mobil Nissan</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="row">
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Nissan Grand Livina">
+                        <input type="image" src="<?= base_url() .'asets/img/list/grandlivina.jpg'?>" alt="Submit button">
+                        <h3>Nissan Grand Livina</h3>
+                      </center>
+                      </form>
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Nissan March">
+                        <input type="image" src="<?= base_url() .'asets/img/list/march.jpg'?>" alt="Submit button">
+                        <h3>Nissan March</h3>
+                      </center>
+                      </form>
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Nissan X-TRAIL">
+                        <input type="image" src="<?= base_url() .'asets/img/list/xtrail.jpg'?>" alt="Submit button">
+                        <h3>Nissan X-TRAIL</h3>
+                      </center>
+                      </form>
+                        </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Nissan Serena">
+                        <input type="image" src="<?= base_url() .'asets/img/list/serena.jpg'?>" alt="Submit button">
+                        <h3>Nissan Serena</h3>
+                      </center>
+                      </form>
+
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Nissan Evalia">
+                        <input type="image" src="<?= base_url() .'asets/img/list/evalia.jpg'?>" alt="Submit button">
+                        <h3>Nissan Evalia</h3>
+                      </center>
+                      </form>
+
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Nissan Navara">
+                        <input type="image" src="<?= base_url() .'asets/img/list/navara.jpg'?>" alt="Submit button">
+                        <h3>Nissan Navara</h3>
+                      </center>
+                      </form>
+                        </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="modal fade" id="mitsubishi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Mobil Mitsubishi</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="row">
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Mitsubishi Pajero Sport">
+                        <input type="image" src="<?= base_url() .'asets/img/list/pajero.jpg'?>" alt="Submit button">
+                        <h3>Mitsubishi Pajero Sport</h3>
+                      </center>
+                      </form>
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Mitsubishi Outlander">
+                        <input type="image" src="<?= base_url() .'asets/img/list/outlander.jpg'?>" alt="Submit button">
+                        <h3>Mitsubishi Outlander</h3>
+                      </center>
+                      </form>
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Mitsubishi Mirage">
+                        <input type="image" src="<?= base_url() .'asets/img/list/mirage.jpg'?>" alt="Submit button">
+                        <h3>Mitsubishi Mirage</h3>
+                      </center>
+                      </form>
+                                      </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Mitsubishi Triton">
+                        <input type="image" src="<?= base_url() .'asets/img/list/triton.jpg'?>" alt="Submit button">
+                        <h3>Mitsubishi Triton</h3>
+                      </center>
+                      </form>
+
+                    </div>
+                    <div id="gmbr" class="col-md-3">
+                      <form action="<?php echo base_url('pencarian')?>" action="GET">
+                      <center>
+                        <input type="hidden" name="data" value="cari">
+                        <input type="hidden" name="nilai" value="Mitsubishi Xpander">
+                        <input type="image" src="<?= base_url() .'asets/img/list/xpander.jpg'?>" alt="Submit button">
+                        <h3>Mitsubishi Xpander</h3>
+                      </center>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="modal fade" id="daihatsu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Mobil Daihatsu</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="row">
+                      <div id="gmbr" class="col-md-3">
+                        <form action="<?php echo base_url('pencarian')?>" action="GET">
+                        <center>
+                          <input type="hidden" name="data" value="cari">
+                          <input type="hidden" name="nilai" value="Daihatsu Ayla">
+                          <input type="image" src="<?= base_url() .'asets/img/list/ayla.jpg'?>" alt="Submit button">
+                          <h3>Daihatsu Ayla</h3>
+                        </center>
+                        </form>
+                      </div>
+                      <div id="gmbr" class="col-md-3">
+                        <form action="<?php echo base_url('pencarian')?>" action="GET">
+                        <center>
+                          <input type="hidden" name="data" value="cari">
+                          <input type="hidden" name="nilai" value="Daihatsu Sigra">
+                          <input type="image" src="<?= base_url() .'asets/img/list/sigra.jpg'?>" alt="Submit button">
+                          <h3>Daihatsu Sigra</h3>
+                        </center>
+                        </form>
+
+                      </div>
+                      <div id="gmbr" class="col-md-3">
+                        <form action="<?php echo base_url('pencarian')?>" action="GET">
+                        <center>
+                          <input type="hidden" name="data" value="cari">
+                          <input type="hidden" name="nilai" value="Daihatsu Xenia">
+                          <input type="image" src="<?= base_url() .'asets/img/list/xenia.jpg'?>" alt="Submit button">
+                          <h3>Daihatsu Xenia</h3>
+                        </center>
+                        </form>
+                          </div>
+                      <div id="gmbr" class="col-md-3">
+                        <form action="<?php echo base_url('pencarian')?>" action="GET">
+                        <center>
+                          <input type="hidden" name="data" value="cari">
+                          <input type="hidden" name="nilai" value="Daihatsu Terios">
+                          <input type="image" src="<?= base_url() .'asets/img/list/terios.jpg'?>" alt="Submit button">
+                          <h3>Daihatsu Terios</h3>
+                        </center>
+                        </form>
+                                          </div>
+                      <div id="gmbr" class="col-md-3">
+                        <form action="<?php echo base_url('pencarian')?>" action="GET">
+                        <center>
+                          <input type="hidden" name="data" value="cari">
+                          <input type="hidden" name="nilai" value="Daihatsu Granmax">
+                          <input type="image" src="<?= base_url() .'asets/img/list/granmax.jpg'?>" alt="Submit button">
+                          <h3>Daihatsu Granmax</h3>
+                        </center>
+                        </form>
+                      </div>
+                      <div id="gmbr" class="col-md-3">
+                        <form action="<?php echo base_url('pencarian')?>" action="GET">
+                        <center>
+                          <input type="hidden" name="data" value="cari">
+                          <input type="hidden" name="nilai" value="Daihatsu Luxio">
+                          <input type="image" src="<?= base_url() .'asets/img/list/luxio.jpg'?>" alt="Submit button">
+                          <h3>Daihatsu Luxio</h3>
+                        </center>
+                        </form>
+                                          </div>
+                      <div id="gmbr" class="col-md-3">
+                        <form action="<?php echo base_url('pencarian')?>" action="GET">
+                        <center>
+                          <input type="hidden" name="data" value="cari">
+                          <input type="hidden" name="nilai" value="Daihatsu Sirion">
+                          <input type="image" src="<?= base_url() .'asets/img/list/sirion.jpg'?>" alt="Submit button">
+                          <h3>Daihatsu Sirion</h3>
+                        </center>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="modal fade" id="isuzu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Mobil Isuzu</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="row">
+                        <div id="gmbr" class="col-md-3">
+                          <form action="<?php echo base_url('pencarian')?>" action="GET">
+                          <center>
+                            <input type="hidden" name="data" value="cari">
+                            <input type="hidden" name="nilai" value="Isuzu Microbus">
+                            <input type="image" src="<?= base_url() .'asets/img/list/microbus.jpg'?>" alt="Submit button">
+                            <h3>Isuzu Microbus</h3>
+                          </center>
+                          </form>
+                        </div>
+
+                        <div id="gmbr" class="col-md-3">
+                          <form action="<?php echo base_url('pencarian')?>" action="GET">
+                            <center>
+                              <input type="hidden" name="data" value="cari">
+                              <input type="hidden" name="nilai" value="Isuzu Panther">
+                              <input type="image" src="<?= base_url() .'asets/img/list/panther.jpg'?>" alt="Submit button">
+                              <h3>Isuzu Panther</h3>
+                            </center>
+                          </form>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>

@@ -42,7 +42,7 @@ class model_mobil extends CI_Model {
 		}
 			else{
 			$cari = $this->input->get('cari', TRUE);
-			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '$cari%' limit $start, $limit");
+			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '%$cari%' limit $start, $limit");
 			return $query->result_array();
 		}
 			//return $this->db->get('tb_mobil', $limit, $start);
@@ -92,7 +92,11 @@ class model_mobil extends CI_Model {
 		return $query->result_array();
 	}
 	public function terbaru(){
-		$query = $this->db->query("SELECT * FROM tb_mobil order by tanggal_input desc limit 10");
+		$query = $this->db->query("SELECT * FROM tb_mobil order by tanggal_input desc limit 5");
+		return $query->result_array();
+	}
+	public function terbaru2(){
+		$query = $this->db->query("SELECT * FROM tb_mobil order by tanggal_input desc limit 5,5");
 		return $query->result_array();
 	}
 }

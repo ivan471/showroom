@@ -18,18 +18,13 @@
 	</div>
 </nav>
 <div class="pencarianmenu">
-
 <div id="search"class="col-lg-11-24 col-sm-8">
-	<form action="pencarian" class="py-1">
+	<form action="<?= base_url().'pencarian'?>" class="py-1" method="GET">
 		<div class="input-group w-100">
-			<form action="<?= base_url().'pencarian'?>" action="GET">
 					<input type="text" class="form-control" id="cari" name="cari" placeholder="cari" >
 				<div class="input-group-append">
-					<button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
-
+					<button id="btn1" class="btn btn-primary" type="submit" onclick="window.location ='<?php base_url().'pencarian' ?>'"><i class="fa fa-search"></i></button>
 				</div>
-			</form>
-
 			</div>
 	</form> <!-- search-wrap .end// -->
 </div> <!-- col.// -->
