@@ -22,7 +22,7 @@
 						 <div class="btn-group white">
 						    <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f  fa-fw"></i></a>
 						    <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram  fa-fw"></i></a>
-								<a class="btn btn-gmail" title="Gmail" target="_blank" href="#"><i class="fab fa-instagram  fa-fw"></i></a>
+								<a class="btn btn-facebook" title="Gmail" target="_blank" href="#"><img src=" <?= base_url().'asets/img/gmail.png' ?>" width="15" height="15"></a>
 						</div>
 					</article>
 				</aside>

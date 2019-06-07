@@ -5,8 +5,12 @@ class model_mobil extends CI_Model {
 	public function tampil( $link ){
 		$query = $this->db->query("SELECT * from tb_mobil where link='".$link."' ");
 		return $query->row_array();
-
 	}
+
+		public function tampilterbaru( $limit, $start ){
+			$query = $this->db->query("SELECT * from tb_mobil order by tanggal_input desc limit $start, $limit");
+			return $query->result_array();
+		}
 	public function listpencarian($limit, $start ){
 	//	$var1 = $this->input->get('var', true);
 		$link = $this->input->get('data');

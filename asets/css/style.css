@@ -309,3 +309,16 @@ img {
 #gmbrsama{
 	height: 130px;
 }
+.btn btn-gmail{
+	background-color: #fff;
+}
+.bg-darks{
+	margin-left: 5%;
+	margin-right: 5%;
+	background:#0F466E;
+     background:-webkit-linear-gradient(right,#0F466E 0%,#5093C4 75%);
+     background:-moz-linear-gradient(right,#0F466E 0%,#5093C4 75%);
+     background:-o-linear-gradient(right,#0F466E 0%,#5093C4 75%);
+     background:-ms-linear-gradient(right,#0F466E 0%,#5093C4 75%);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5093C4',endColorstr='#0F466E',GradientType=1);
+}

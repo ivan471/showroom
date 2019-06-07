@@ -156,6 +156,11 @@
 		</aside> <!-- col.// -->
 
 		<main class="col-sm-9">
+			<?php if (!empty($data)==0){?>
+				<center>
+				<h6 id="info"> Hasil Pencarian Tidak ditemukan</h6>
+			</center>
+			<?php }else {?>
 			<?php foreach ($data as $s ) : ?>
 			<article class="card card-product">
 				<div class="card-body">
@@ -191,7 +196,7 @@
 					</div> <!-- card-body .// -->
 				</article> <!-- card product .// -->
 			<?php endforeach; ?>
-
+			<?php } ?>
 	</main> <!-- col.// -->
 	<div class="col-sm">
 		<?php echo $pagination; ?>

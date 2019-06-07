@@ -32,7 +32,7 @@
       </a>
     </div>
   </header>
-  <footer class="py-3 bg-dark"></footer><br>
+  <footer class="py-3 bg-darks"></footer><br>
     <h4 id="ly1">Rekomendasi</h4>
     <!-- Marketing Icons Section -->
     <!--Carousel Wrapper-->
@@ -43,7 +43,7 @@
     <div class="carousel-item active">
       <div id="slider-rekomendasi"class="row">
         <?php $i = 0; foreach ($terbaru as $baru) :?>
-        <div class="col-md-4">
+        <div class="col-sm-2">
           <div class="card mb-2">
             <img class="card-img-top" src="<?= $baru['gambar1']; ?>" alt="Card image cap">
             <div class="card-body">
@@ -59,7 +59,7 @@
     <div class="carousel-item">
       <div id="slider-rekomendasi"class="row">
         <?php $i = 0; foreach ($terbaru2 as $baru2) :?>
-        <div class="col-md-4">
+        <div class="col-sm-2">
           <div class="card mb-2">
             <img class="card-img-top" src="<?= $baru2['gambar1']; ?>" alt="Card image cap">
             <div class="card-body">
@@ -83,7 +83,7 @@
   </div>
 </div>
 <!--/.Carousel Wrapper-->
-<footer class="py-3 bg-dark"></footer><br>
+<footer class="py-3 bg-darks"></footer><br>
       <!-- Page Content -->
 <section class="section-content padding-y-sm bg">
   <div class="container mb-3">
@@ -160,9 +160,42 @@
 
 </div> <!-- container .//  -->
 </section>
+<footer class="py-3 bg-darks"></footer><br>
+  <div class="container">
+    <h3 class="my-4">Stock Ready</h3>
+    <div class="row">
+    <div class="col-sm-8">
+      <?php foreach ($data as $f ) : ?>
+      <article class="card card-product">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="<?php echo $f['gambar1'];  ?>" width="265" height="210" alt="">
+            </div>
+            <div class="col-sm-7">
+              <h4 class="title"><?= $f['nama']; ?></h4>
+              <h4><?= $f['tahun']; ?></h4>
+              <h4><?= $f['transmisi']; ?></h4>
 
-          <footer class="py-3 bg-dark"></footer><br>
-    <div class="container">
+            </div>
+          </div>
+        </div>
+      </article>
+    <?php endforeach; ?>
+    <?php echo $pagination; ?>
+    </div>
+    <div class="col-sm-4">
+        <article class="card card-product">
+          <div class="card-body">
+            <img src="" alt="">
+          </div>
+          <h5>Deskripsi info</h5>
+        </article>
+    </div>
+      </div>
+  </div>
+<footer class="py-3 bg-dark"></footer><br>
+  <div class="container">
       <h1 class="my-4">Meranti Motor Makassar</h1>
       <h3 class="my-4">Jual Beli Mobil Bekas</h3>
       <div class="row">
@@ -487,7 +520,7 @@
                         <h3>Suzuki Ertiga</h3>
                       </center>
                       </form>
-                                      </div>
+                    </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
                       <center>
@@ -497,7 +530,6 @@
                         <h3>Suzuki Karimun Wagon R</h3>
                       </center>
                       </form>
-
                     </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
@@ -518,7 +550,6 @@
                         <h3>Suzuki Carry</h3>
                       </center>
                       </form>
-
                     </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
@@ -529,7 +560,7 @@
                         <h3>Suzuki Swift</h3>
                       </center>
                       </form>
-                                      </div>
+                    </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
                       <center>
@@ -539,7 +570,7 @@
                         <h3>Suzuki SX-4</h3>
                       </center>
                       </form>
-                        </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -591,7 +622,6 @@
                         <h3>Nissan Serena</h3>
                       </center>
                       </form>
-
                     </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
@@ -602,7 +632,6 @@
                         <h3>Nissan Evalia</h3>
                       </center>
                       </form>
-
                     </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
@@ -613,7 +642,7 @@
                         <h3>Nissan Navara</h3>
                       </center>
                       </form>
-                        </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -655,7 +684,7 @@
                         <h3>Mitsubishi Mirage</h3>
                       </center>
                       </form>
-                                      </div>
+                    </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
                       <center>
@@ -665,7 +694,6 @@
                         <h3>Mitsubishi Triton</h3>
                       </center>
                       </form>
-
                     </div>
                     <div id="gmbr" class="col-md-3">
                       <form action="<?php echo base_url('pencarian')?>" action="GET">
@@ -676,7 +704,6 @@
                         <h3>Mitsubishi Xpander</h3>
                       </center>
                       </form>
-
                     </div>
                   </div>
                 </div>
@@ -709,7 +736,6 @@
                           <h3>Daihatsu Sigra</h3>
                         </center>
                         </form>
-
                       </div>
                       <div id="gmbr" class="col-md-3">
                         <form action="<?php echo base_url('pencarian')?>" action="GET">
@@ -730,7 +756,7 @@
                           <h3>Daihatsu Terios</h3>
                         </center>
                         </form>
-                                          </div>
+                      </div>
                       <div id="gmbr" class="col-md-3">
                         <form action="<?php echo base_url('pencarian')?>" action="GET">
                         <center>
@@ -750,7 +776,7 @@
                           <h3>Daihatsu Luxio</h3>
                         </center>
                         </form>
-                                          </div>
+                      </div>
                       <div id="gmbr" class="col-md-3">
                         <form action="<?php echo base_url('pencarian')?>" action="GET">
                         <center>
@@ -783,7 +809,6 @@
                           </center>
                           </form>
                         </div>
-
                         <div id="gmbr" class="col-md-3">
                           <form action="<?php echo base_url('pencarian')?>" action="GET">
                             <center>
