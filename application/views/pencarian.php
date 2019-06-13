@@ -3,7 +3,7 @@
 <!-- ========================= SECTION CONTENT ========================= -->
 	<section class="section-content bg padding-y">
 		<div class="container">
-			<nav class="mb-3">
+			<nav class="sm-3">
 			<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="<?= base_url() ?>">Beranda</a></li>
 					<li class="breadcrumb-item">Pencarian</li>

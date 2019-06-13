@@ -1,35 +1,47 @@
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('asets/img/depan/depan.jpeg'); background-position: center;">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('asets/img/depan/depan2.jpeg')">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('asets/img/depan/depan3.jpeg')">
-          <div class="carousel-caption d-none d-md-block">
+    <div class="row">
+      <div class="col-sm-6 ly-1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('asets/img/depan/depan.jpeg'); background-position: center;">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('asets/img/depan/depan2.jpeg')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('asets/img/depan/depan3.jpeg')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="col-sm-6 ly-2">
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('asets/img/depan/depan.jpeg'); background-position: center;">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('asets/img/depan/depan2.jpeg')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('asets/img/depan/depan3.jpeg')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <footer class="py-3 bg-darks"></footer><br>
@@ -92,7 +104,7 @@
      </header>
      <div class="card">
        <div class="row no-gutters">
-	        <div class="col-md-3">
+	        <div class="col-sm-3">
             <article href="#" class="card-banner h-100 bg2">
 	             <div class="card-body zoom-wrap">
 		               <h5 class="title">MERK POPULER</h5>
@@ -100,66 +112,66 @@
 	                  </div>
                   </article>
 	         </div> <!-- col.// -->
-	<div class="col-md-9">
-<ul class="row no-gutters border-cols">
-	<li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">TOYOTA</p>
-    <input class="img-sm" type="image" src="<?=base_url('')  ?>asets/img/icon/toyota3.jpeg" width="100" height="100" data-toggle="modal" data-target="#toyota">
-	</div>
-	</li>
-	<li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">HONDA</p>
-    <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/honda.jpeg')  ?>" width="100" height="100" data-toggle="modal" data-target="#honda">
-  </div>
-	</li>
-	<li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">SUZUKI</p>
-    <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/suzuki.gif')  ?>" width="100" height="100" data-toggle="modal" data-target="#suzuki">
-	</div>
-	</li>
-	<li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">NISSAN</p>
-		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/nissan.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#nissan">
-	</div>
-	</li>
-</ul>
-<ul class="row no-gutters border-cols">
-	<li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">MITSUBISHI</p>
-		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/mitsubishi.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
-	</div>
-	</li>
-	<li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">DAIHATSU</p>
-		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/daihatsu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
-	</div>
-	</li>
-  <li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">ISUZU</p>
-		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/isuzu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#isuzu">
-	</div>
-	</li>
-	<li class="col-6 col-md-3">
-	<div class="card-body">
-		<p class="word-limit">HINO</p>
-		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/hino.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#hino">
-  </div>
-	</li>
-</ul>
-	</div> <!-- col.// -->
-</div> <!-- row.// -->
-
-</div> <!-- card.// -->
-
-</div> <!-- container .//  -->
-</section>
+	          <div class="col-sm-9">
+              <ul class="row no-gutters border-cols">
+	               <li class="col-md-3">
+	                  <div class="card-body">
+                      <center>
+                        <p class="word-limit">TOYOTA</p>
+                        <input class="img-sm" type="image" src="<?=base_url('')  ?>asets/img/icon/toyota3.jpeg" width="100" height="100" data-toggle="modal" data-target="#toyota">
+                      </center>
+	                   </div>
+	                  </li>
+	                   <li class="col-md-3">
+	                      <div class="card-body">
+		                        <p class="word-limit">HONDA</p>
+                            <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/honda.jpeg')  ?>" width="100" height="100" data-toggle="modal" data-target="#honda">
+                          </div>
+	                       </li>
+	                        <li class="col-md-3">
+	                           <div class="card-body">
+		                             <p class="word-limit">SUZUKI</p>
+                                 <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/suzuki.gif')  ?>" width="100" height="100" data-toggle="modal" data-target="#suzuki">
+	                              </div>
+                        	</li>
+                        	<li class="col-md-3">
+                        	<div class="card-body">
+                        		<p class="word-limit">NISSAN</p>
+                        		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/nissan.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#nissan">
+                        	</div>
+                        	</li>
+                        </ul>
+                        <ul class="row no-gutters border-cols">
+                      	<li class="col-md-3">
+                      	<div class="card-body">
+                      		<p class="word-limit">MITSUBISHI</p>
+                      		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/mitsubishi.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
+                      	</div>
+                      	</li>
+                      	<li class="col-md-3">
+                      	<div class="card-body">
+                      		<p class="word-limit">DAIHATSU</p>
+                      		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/daihatsu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
+                      	</div>
+                      	</li>
+                        <li class="col-md-3">
+                      	<div class="card-body">
+                      		<p class="word-limit">ISUZU</p>
+                      		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/isuzu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#isuzu">
+                      	</div>
+                      	</li>
+                      	<li class="col-md-3">
+                      	   <div class="card-body">
+                      		     <p class="word-limit">HINO</p>
+                      		       <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/hino.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#hino">
+                               </div>
+                      	</li>
+                      </ul>
+                    </div> <!-- col.// -->
+                  </div> <!-- row.// -->
+                </div> <!-- card.// -->
+              </div> <!-- container .//  -->
+            </section>
 <footer class="py-3 bg-darks"></footer><br>
   <div class="container">
     <h3 class="my-4">Stock Ready</h3>
