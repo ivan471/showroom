@@ -179,17 +179,21 @@
 							  <dd><?php echo $s['tahun']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 							<dl class="dlist-align">
-							  <dt><img src="<?= base_url().'asets/icon/transmisi.gif' ?>" width="15" height="15">Transmisi</dt>
+								<dt><img src="<?= base_url().'asets/icon/transmisi.gif' ?>" width="15" height="15">Transmisi</dt>
 							  <dd> <?php echo $s['transmisi']; ?></dd>
 							</dl>  <!-- item-property-hor .// -->
 						</article> <!-- col.// -->
-						<aside class="col-sm-3 border-left">
+						<aside class="col-sm-3">
 							<div class="action-wrap">
 								<div class="price-wrap h4">
 									<span class="price">Rp.<?php echo number_format($s['harga'], 0, ".", ".") ?> </span>
 								</div> <!-- info-price-detail // -->
-								<br><br><br><br><br>
-								<p><a href="<?= base_url().'detail/'.$s['link']; ?>" class="btn btn-secondary"> Details  </a></p>
+								<br><br><br>
+								<p>
+									<center>
+									<a href="<?= base_url().'detail/'.$s['link']; ?>" class="btn btn-secondary btn-search">Details</a>
+								</center>
+								</p>
 							</div> <!-- action-wrap.// -->
 						</aside> <!-- col.// -->
 					</div> <!-- row.// -->
