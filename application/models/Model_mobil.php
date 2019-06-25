@@ -6,13 +6,11 @@ class model_mobil extends CI_Model {
 		$query = $this->db->query("SELECT * from tb_mobil where link='".$link."' ");
 		return $query->row_array();
 	}
-
-		public function tampilterbaru( $limit, $start ){
+	public function tampilterbaru( $limit, $start ){
 			$query = $this->db->query("SELECT * from tb_mobil order by tanggal_input desc limit $start, $limit");
 			return $query->result_array();
-		}
+	}
 	public function listpencarian($limit, $start ){
-	//	$var1 = $this->input->get('var', true);
 		$link = $this->input->get('data');
 		if ($link == "baru") {
 			$query = $this->db->query("SELECT * FROM tb_mobil order by tanggal_input desc limit $start, $limit");
@@ -49,47 +47,6 @@ class model_mobil extends CI_Model {
 			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '%$cari%' limit $start, $limit");
 			return $query->result_array();
 		}
-			//return $this->db->get('tb_mobil', $limit, $start);
-	}
-	public function total_toyota(){
-		$cari = 'Toyota';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
-	}
-	public function total_honda(){
-		$cari = 'Honda';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
-	}
-	public function total_suzuki(){
-		$cari = 'Suzuki';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
-	}
-	public function total_nissan(){
-		$cari = 'Nissan';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
-	}
-	public function total_mitsubishi(){
-		$cari = 'Mitsubishi';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
-	}
-	public function total_daihatsu(){
-		$cari = 'Daihatsu';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
-	}
-	public function total_mazda(){
-		$cari = 'Mazda';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
-	}
-	public function total_hino(){
-		$cari = 'Hino';
-		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$cari%'");
-		return $query->row_array();
 	}
 	public function tampilsama( $var1, $var2 ){
 		$query = $this->db->query("SELECT * FROM tb_mobil WHERE model='".$var1."' and nama not like '$var2' limit 5");
@@ -102,5 +59,9 @@ class model_mobil extends CI_Model {
 	public function terbaru2(){
 		$query = $this->db->query("SELECT * FROM tb_mobil order by tanggal_input desc limit 5,5");
 		return $query->result_array();
+	}
+	public function total($mobil){
+		$query = $this->db->query("SELECT count(id) as jmlh FROM tb_mobil where nama like '$mobil%'");
+		return $query->row_array();
 	}
 }

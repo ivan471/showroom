@@ -8,8 +8,6 @@ class Pencarian extends CI_Controller {
   }
 	public function cari()
 	{
-    	//$config['base_url'] = 'http://localhost/showroom/'; //site url
-
        $config['base_url'] = site_url('pencarian'); //site url
 			 $config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
 			 $config['per_page'] = 10;  //show record per halaman
@@ -40,23 +38,18 @@ class Pencarian extends CI_Controller {
 			$data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 			//panggil function get_mahasiswa_list yang ada pada mmodel mahasiswa_model.
 			 $data['data'] = $this->model_mobil->listpencarian($config["per_page"], $data['page']);
-       $data['jmlhlist1'] = $this->model_mobil->total_toyota();
-       $data['jmlhlist2'] = $this->model_mobil->total_honda();
-       $data['jmlhlist3'] = $this->model_mobil->total_suzuki();
-       $data['jmlhlist4'] = $this->model_mobil->total_nissan();
-       $data['jmlhlist5'] = $this->model_mobil->total_mitsubishi();
-       $data['jmlhlist6'] = $this->model_mobil->total_daihatsu();
-       $data['jmlhlist7'] = $this->model_mobil->total_mazda();
-       $data['jmlhlist8'] = $this->model_mobil->total_hino();
+       $mobil = array("Toyota","Honda","Suzuki","Nissan","Mitsubishi","Daihatsu","Mazda","Hino");
+       $data['jmlhlist1'] = $this->model_mobil->total($mobil[0]);
+       $data['jmlhlist2'] = $this->model_mobil->total($mobil[1]);
+       $data['jmlhlist3'] = $this->model_mobil->total($mobil[2]);
+       $data['jmlhlist4'] = $this->model_mobil->total($mobil[3]);
+       $data['jmlhlist5'] = $this->model_mobil->total($mobil[4]);
+       $data['jmlhlist6'] = $this->model_mobil->total($mobil[5]);
+       $data['jmlhlist7'] = $this->model_mobil->total($mobil[6]);
+       $data['jmlhlist8'] = $this->model_mobil->total($mobil[7]);
 
 			 $data['pagination'] = $this->pagination->create_links();
-    //$data['search']=$this->model_mobil->listpencarian();
-		//	$data['judul']='Pencarian';
-
-			$this->load->view('layout/header');
-			$this->load->view('layout/nav');
-			$this->load->view('pencarian' , $data);
-			$this->load->view('layout/footer');
+    $this->load->template('pencarian' , $data);
 	}
 
 

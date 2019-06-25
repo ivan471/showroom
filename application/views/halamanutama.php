@@ -42,9 +42,9 @@
       </div>
     </div>
   </div>
-  </header>
-  <footer class="py-3 bg-dark"></footer><br>
-    <h4 id="ly1">Rekomendasi</h4>
+</header>
+<footer class="py-3 bg-dark"></footer><br>
+<h4 id="ly1">Rekomendasi</h4>
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
   <!--Slides-->
   <div class="carousel-inner" role="listbox">
@@ -103,12 +103,10 @@
      <div class="card shadow">
        <div class="row no-gutters">
 	        <div class="col-sm-3">
-            <article href="#" class="card-banner h-100 bg2">
 	             <div class="card-body zoom-wrap">
-		               <h5 class="title">MERK POPULER</h5>
-		                 <p>ISI BELUM ADA. </p>
+		               <h5 class="title">MERK-MERK Mobil POPULER</h5>
+		                 <p>Deskripsi belum ada </p>
 	                  </div>
-                  </article>
 	       </div> <!-- col.// -->
 	          <div class="col-sm-9">
               <ul class="row no-gutters border-cols">
@@ -142,36 +140,37 @@
                         	</li>
                         </ul>
                         <ul class="row no-gutters border-cols">
-                      	<li class="col-sm-3">
-                      	<div class="card-body"><center>
-                      		<p class="word-limit">MITSUBISHI</p>
-                      		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/mitsubishi.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
-                        </center>
-                      	</div>
-                      	</li>
-                      	<li class="col-sm-3">
-                      	<div class="card-body"><center>
-                      		<p class="word-limit">DAIHATSU</p>
-                      		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/daihatsu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
-                        </center>
-                        </div>
-                      	</li>
-                        <li class="col-sm-3">
-                      	<div class="card-body"><center>
-                      		<p class="word-limit">ISUZU</p>
-                      		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/isuzu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#isuzu">
-                        </center>
-                        </div>
-                      	</li>
-                      	<li class="col-sm-3">
-                      	   <div class="card-body">
-                             <center>
-                      		     <p class="word-limit">HINO</p>
-                      		     <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/hino.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#hino">
-                             </center>
+                      	   <li class="col-sm-3">
+                      	      <div class="card-body">
+                                <center>
+                      		      <p class="word-limit">MITSUBISHI</p>
+                      		      <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/mitsubishi.png')  ?>" width="100" height="100" data-toggle="modal" data-target="#mitsubishi">
+                                </center>
+                      	      </div>
+                      	    </li>
+                          	<li class="col-sm-3">
+                          	<div class="card-body"><center>
+                          		<p class="word-limit">DAIHATSU</p>
+                          		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/daihatsu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#daihatsu">
+                            </center>
                             </div>
-                      	</li>
-                      </ul>
+                          	</li>
+                            <li class="col-sm-3">
+                          	<div class="card-body"><center>
+                          		<p class="word-limit">ISUZU</p>
+                          		<input class="img-sm" type="image" src="<?=base_url('asets/img/icon/isuzu.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#isuzu">
+                            </center>
+                            </div>
+                          	</li>
+                          	<li class="col-sm-3">
+                          	   <div class="card-body">
+                                 <center>
+                          		     <p class="word-limit">HINO</p>
+                          		     <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/hino.jpg')  ?>" width="100" height="100" data-toggle="modal" data-target="#hino">
+                                 </center>
+                                </div>
+                          	</li>
+                          </ul>
                     </div> <!-- col.// -->
                   </div> <!-- row.// -->
                 </div> <!-- card.// -->
@@ -187,26 +186,25 @@
         <div class="card-body">
           <div class="row">
             <div class="col-sm-3">
-              <img src="<?php echo $f['gambar1'];  ?>" width="100%" height="65%" alt="">
+              <div class="img-wrap"><img src="<?php echo $f['gambar1'];  ?>" width="100%" height="210"></div>
             </div>
             <div class="col-sm-9">
               <div class="row">
-              <div class="col-sm-8">
-                <h4 class="title"><?= $f['nama']; ?></h4>
-                <div class="row">
-                  <i class="far fa-calendar-alt mr-3" style="color:#31d6ba"></i>
-                  <h5><?= $f['tahun']; ?></h5>
+                <div class="col-sm-8">
+                  <h4 class="title"><?= $f['nama']; ?></h4>
+                  <div class="row ml-1">
+                    <i class="far fa-calendar-alt mr-2 mt-1" style="color:#31d6ba"></i>
+                    <h6><?= $f['tahun']; ?></h6>
+                  </div>
+                  <div class="row ml-1">
+                    <img class="mt-1 mr-2"src="<?= base_url().'asets/icon/transmisi.gif' ?>" width="15" height="15">
+                    <h6><?= $f['transmisi']; ?></h6>
+                  </div>
                 </div>
-                <div class="row">
-                  <img src="<?= base_url().'asets/icon/transmisi.gif' ?>" width="15" height="15">
-                  <h5><?= $f['transmisi']; ?></h5>
+                <div class="col-sm-4">
+                  <h5 class="prices">Rp.<?php echo number_format($f['harga'], 0, ".", ".") ?> </h5>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <h5 class="prices">Rp.<?php echo number_format($f['harga'], 0, ".", ".") ?> </h5>
-              </div>
-            </div>
-
             </div>
           </div>
         </div>

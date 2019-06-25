@@ -13,7 +13,7 @@
 
 <div class="row">
 <div class="col-xl-10 col-md-9 col-sm-12">
-<main class="card">
+<main class="card shadow">
 	<div class="row no-gutters">
 		<aside class="col-sm-6 border-right">
 			<article class="gallery-wrap">
@@ -138,7 +138,7 @@
 
 <!-- PRODUCT DETAIL -->
 <article id="detail-mobil" class="card mt-3">
-	<div class="card-body">
+	<div class="card-body shadow">
 		<h4>Detail Mobil</h4>
 	<p>	<?= $mobil['deskripsi'];  ?></p>
 	</div> <!-- card-body.// -->
@@ -148,7 +148,7 @@
 
 </div> <!-- col // -->
 <aside class="col-xl-2 col-md-3 col-sm-12">
-<div class="card mt-3">
+<div class="card mt-3 shadow">
 	<div class="card-header">Model yang Sama</div>
 	<div class="card-body row">
   <?php foreach ($model as $m ) : ?>
