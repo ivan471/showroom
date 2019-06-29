@@ -3,7 +3,7 @@
     <img src="asets/img/about-img.jpg" alt="">
   </div>
   <div class="col-lg-6 content wow fadeInRight">
-    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h2>
+    <h2>Lorem ipsum dolor sit amet</h2>
     <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>

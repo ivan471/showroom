@@ -1,6 +1,5 @@
 <?php
-
-class model_mobil extends CI_Model {
+	class model_mobil extends CI_Model {
 
 	public function tampil( $link ){
 		$query = $this->db->query("SELECT * from tb_mobil where link='".$link."' ");

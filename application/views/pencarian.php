@@ -1,5 +1,5 @@
 <div class="halaman">
-		<div class="daftar-perncarian">
+	<div class="daftar-perncarian">
 <!-- ========================= SECTION CONTENT ========================= -->
 	<section class="section-content bg padding-y">
 		<div class="container">
@@ -81,7 +81,6 @@
 								</div> <!-- card-body.// -->
 							</div> <!-- collapse .// -->
 						</article> <!-- card-group-item.// -->
-
 				<article class="card-group-item">
 					<header class="card-header">
 						<a href="" data-toggle="collapse" data-target="#collapse44">
@@ -204,7 +203,6 @@
 	</main> <!-- col.// -->
 	<div class="col-sm">
 		<?php echo $pagination; ?>
-
 	</div>
 	</div>
 	</div> <!-- container .//  -->

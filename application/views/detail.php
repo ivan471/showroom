@@ -1,16 +1,13 @@
 <section class="section-content bg padding-y-sm">
-<div class="container">
-<nav class="mb-3">
-<ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Beranda</a></li>
-    <li class="breadcrumb-item">
-    <a href="#" onclick="document.getElementById('merk').submit();"><?= $mobil['merk']; ?></a></li>
-    <li class="breadcrumb-item">
-    <a href="#"onclick="document.getElementById('model').submit();"><?= $mobil['model'];  ?></a></li>
-    <li class="breadcrumb-item active" aria-current="page"><?= $mobil['nama'];  ?></li>
-</ol>
-</nav>
-
+  <div class="container">
+    <nav class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="<?= base_url() ?>">Beranda</a></li>
+        <li class="breadcrumb-item"><a href="#" onclick="document.getElementById('merk').submit();"><?= $mobil['merk'];?></a></li>
+        <li class="breadcrumb-item"><a href="#"onclick="document.getElementById('model').submit();"><?= $mobil['model']; ?></a></li>
+        <li class="breadcrumb-item active" aria-current="page"><?= $mobil['nama'];?></li>
+      </ol>
+    </nav>
 <div class="row">
 <div class="col-xl-10 col-md-9 col-sm-12">
 <main class="card shadow">
@@ -87,7 +84,6 @@
             captionText.innerHTML = dots[slideIndex-1].alt;
           }
           </script>
-
 				</article> <!-- gallery-wrap .end// -->
 			</aside>
 		<aside class="col-sm-6">
@@ -109,43 +105,31 @@
           <dd class="col-sm-7 garis"><?= $mobil['varian'];  ?> </dd>
         	<dt class="col-sm-5 garis">Warna</dt>
           <dd class="col-sm-7 garis"><?= $mobil['warna'];  ?> </dd>
-
           <dt class="col-sm-5 garis">Type</dt>
           <dd class="col-sm-7 garis"><?= $mobil['type'];  ?> </dd>
-
         	<dt class="col-sm-5 garis">Transmisi</dt>
         	<dd class="col-sm-7 garis"><?= $mobil['transmisi'];  ?> </dd>
-
         	<dt class="col-sm-5 garis">Kapasitas Mesin</dt>
         	<dd class="col-sm-7 garis"><?= $mobil['kapasitas'];  ?>CC </dd>
-
         	<dt class="col-sm-5 garis">No Polisi</dt>
         	<dd class="col-sm-7 garis"><?= $mobil['no_polisi'];  ?> </dd>
-
         	<dt class="col-sm-5 garis">Bahan Bakar</dt>
         	<dd class="col-sm-7 garis"><?= $mobil['bahan_bakar'];  ?> </dd>
-
         	<dt class="col-sm-5 garis">Masa Berlaku STNK</dt>
         	<dd class="col-sm-7 garis"><?= $mobil['masa_berlaku_stnk'];  ?> </dd>
         </dl>
-<hr>
-	<a href="#" class="btn  btn-warning"> <i class="fa fa-envelope"></i> Kontact Supplier </a>
-<!-- short-info-wrap .// -->
-</article> <!-- card-body.// -->
+        <hr><a href="#" class="btn  btn-warning"> <i class="fa fa-envelope"></i> Kontact Supplier </a>
+      </article> <!-- card-body.// -->
 		</aside> <!-- col.// -->
 	</div> <!-- row.// -->
 </main> <!-- card.// -->
-
 <!-- PRODUCT DETAIL -->
 <article id="detail-mobil" class="card mt-3">
 	<div class="card-body shadow">
 		<h4>Detail Mobil</h4>
-	<p>	<?= $mobil['deskripsi'];  ?></p>
+	   <p>	<?= $mobil['deskripsi'];  ?></p>
 	</div> <!-- card-body.// -->
 </article> <!-- card.// -->
-
-<!-- PRODUCT DETAIL .// -->
-
 </div> <!-- col // -->
 <aside class="col-xl-2 col-md-3 col-sm-12">
 <div class="card mt-3 shadow">
