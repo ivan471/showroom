@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['beranda'] = 'home';
+$route['keunggulan'] = 'home/keunggulan';
 $route['detail/(:any)'] = 'home/detail/$1';
 $route['profil'] = 'home/profil';
 $route['pencarian'] = 'pencarian/cari';

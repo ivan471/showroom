@@ -157,7 +157,7 @@
 		<main class="col-sm-9">
 			<?php if (!empty($data)==0){?>
 				<center>
-				<h6 id="info"> Hasil Pencarian Tidak ditemukan</h6>
+				<h4 id="info"> Tidak Ada Hasil Pencarian</h4>
 			</center>
 			<?php }else {?>
 			<?php foreach ($data as $s ) : ?>

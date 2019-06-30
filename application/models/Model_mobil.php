@@ -28,7 +28,7 @@
 			return $query->result_array();
 		}elseif ($link == "cari") {
 			$set = $this->input->get('nilai');
-			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '$set%' limit $start, $limit");
+			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '%$set%' limit $start, $limit");
 			return $query->result_array();
 		}elseif ($link == "nama") {
 			$cari = $this->input->post('nilai');

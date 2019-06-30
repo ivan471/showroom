@@ -117,6 +117,11 @@ fa {
 .bg-dark{
      background:-webkit-linear-gradient(right,#0F466E 0%,#5093C4 75%);
 }
+.bg-darks{
+     background:-webkit-linear-gradient(right,#0F466E 0%,#5093C4 75%);
+		 margin-left: 100px;
+		 margin-right: 100px;
+}
 .navbar-dark .navbar-nav .nav-link:hover {
 		color: #fff;
 }
@@ -319,4 +324,42 @@ iframe{
 }
 .mrc{
 	margin-left: 5px;
+}
+.a:hover{
+	color: #000;
+}
+.content-item{
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-right: 200px;
+	margin-bottom: 15px;
+}
+.content-fasilitas{
+	margin-top: 5px;
+	margin-right: 100px;
+}
+.menu a{
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0.5em 0.5em 0.5em 1.9em;
+	padding: 1em 1.1em;
+	width: 280px;
+	outline: none;
+	color: #fff;
+	background: #336ca6;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
+.menu a:hover{
+	opacity: 0.6;
+}
+.link{
+	color: #fff;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }

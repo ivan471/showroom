@@ -62,5 +62,9 @@ class Home extends CI_Controller {
 	{
 		$this->load->template('profil');
 	}
+  public function keunggulan()
+  {
+    $this->load->template('keunggulan');
+  }
 
 }
