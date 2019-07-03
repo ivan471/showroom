@@ -65,17 +65,36 @@
 					      <td>2015</td>
 					      <td>200 Buah</td>
 					    </tr>
+							<tr>
+					      <td>2016</td>
+					      <td>250 Buah</td>
+					    </tr>
+							<tr>
+					      <td>2017</td>
+					      <td>190 Buah</td>
+					    </tr>
+							<tr>
+					      <td>2018</td>
+					      <td>185 Buah</td>
+					    </tr>
 					  </tbody>
 					</table>
 				</div>
 				<h2 id="fasilitas" class="mt-5">Fasilitas Meranti Motor</h2>
 				<div class="content-fasilitas">
-						<ul>
-							<li>Lokasi strategis dan area parkir yang luas</li>
-							<li>Dokumen dan histori kendaraan lengkap</li>
-							<li>Keamanan 24 Jam</li>
-							<li>Ruang yang nyaman</li>
-						</ul>
+					<div class="row">
+						<div class="col-sm-6">
+							<ul>
+								<li>Lokasi strategis dan area parkir yang luas</li>
+								<li>Dokumen dan histori kendaraan lengkap</li>
+								<li>Keamanan 24 Jam</li>
+								<li>Ruang yang nyaman</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<img src="" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

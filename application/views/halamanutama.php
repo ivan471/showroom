@@ -1,45 +1,35 @@
-  <header>
-    <div class="card">
+<header>
     <div class="row">
-      <div class="col-sm-6 ly-1">
+      <div class="col-sm-6 mt-3 ly-1">
         <div id="carouselExampleIndicators" class="carousel slide shadow" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('asets/img/depan/dpn1.jpeg'); background-position: center;">
+            <div class="carousel-item active">
+              <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/dpn1.jpeg' ?>">
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('asets/img/depan/depan2.jpeg')">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('asets/img/depan/depan3.jpeg')">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
+            <div class="carousel-item">
+              <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan2.jpeg' ?>">
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 ly-2">
+      <div class="col-sm-6 mt-3 ly-2">
         <div id="carouselExampleIndicators1" class="carousel slide shadow" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url('asets/img/depan/depan.jpeg'); background-position: center;">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
+            <div class="carousel-item active">
+              <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan.jpeg' ?>">
             </div>
-            <div class="carousel-item" style="background-image: url('asets/img/depan/depan2.jpeg')">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
+            <div class="carousel-item">
+              <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan2.jpeg' ?>">
             </div>
-            <div class="carousel-item" style="background-image: url('asets/img/depan/depan3.jpeg')">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
+            <div class="carousel-item">
+              <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan3.jpeg' ?>">
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </header>
 <footer class="py-3 bg-darks"></footer><br>
 <h4 id="ly1">Rekomendasi Mobil Bekas Berkualitas Di Makassar</h4>
@@ -48,7 +38,7 @@
   <div class="carousel-inner" role="listbox">
     <!--First slide-->
     <div class="carousel-item active">
-      <div id="slider-rekomendasi"class="row">
+      <div id="slider-rekomendasi"class="row mb-5 mt-2">
         <?php $i = 0; foreach ($terbaru as $baru) :?>
         <div class="col-sm-2">
           <div class="card mb-2">
@@ -92,41 +82,41 @@
 </div>
 <!--/.Carousel Wrapper-->
 <footer class="py-3 bg-darks"></footer><br>
-      <!-- Page Content -->
+<!-- Page Content Merk Mobil -->
 <section class="section-content padding-y-sm bg">
   <div class="container mb-3">
-     <div class="card shadow">
-       <div class="row no-gutters">
-	       <div class="col-sm-5">
-		        <img src="<?=base_url('')  ?>asets/img/depan/dpn2.jpeg" width="100%" height="100%" alt="">
-	        </div> <!-- col.// -->
-	        <div class="col-sm-7">
-            <ul class="row no-gutters border-cols">
-	           <li class="col-sm-3">
-	            <div class="card-body">
-                  <form action="<?php echo base_url('pencarian')?>" action="GET">
-                    <center>
-                      <input type="hidden" name="data" value="cari">
-                      <input type="hidden" name="nilai" value="Toyota">
-                      <p class="word-limit">TOYOTA</p>
-                      <input class="img-sm" type="image" src="<?=base_url('')  ?>asets/img/icon/toyota3.jpeg" width="100" height="100" alt="Submit button" >
-                    </center>
-                  </form>
-	            </div>
-	           </li>
-	           <li class="col-sm-3">
-	            <div class="card-body">
-                <form action="<?php echo base_url('pencarian')?>" action="GET">
-                  <center>
-                    <input type="hidden" name="data" value="cari">
-                    <input type="hidden" name="nilai" value="Honda">
-		                <p class="word-limit">HONDA</p>
-                    <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/honda.jpeg')  ?>" width="100" height="100" alt="Submit button">
-                  </center>
-                </form>
-              </div>
-	           </li>
-	           <li class="col-sm-3">
+    <div class="card shadow">
+      <div class="row no-gutters">
+	     <div class="col-sm-5">
+		     <img src="<?=base_url().'asets/img/depan/dpn2.jpeg'?>" width="100%" height="100%">
+	     </div> <!-- col.// -->
+	     <div class="col-sm-7">
+         <ul class="row no-gutters border-cols">
+	        <li class="col-sm-3">
+	         <div class="card-body">
+            <form action="<?php echo base_url('pencarian')?>" action="GET">
+              <center>
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Toyota">
+                <p class="word-limit">TOYOTA</p>
+                <input class="img-sm" type="image" src="<?=base_url('')  ?>asets/img/icon/toyota3.jpeg" width="100" height="100" alt="Submit button" >
+              </center>
+            </form>
+	         </div>
+	        </li>
+	        <li class="col-sm-3">
+	         <div class="card-body">
+            <form action="<?php echo base_url('pencarian')?>" action="GET">
+              <center>
+                <input type="hidden" name="data" value="cari">
+                <input type="hidden" name="nilai" value="Honda">
+		            <p class="word-limit">HONDA</p>
+                <input class="img-sm" type="image" src="<?=base_url('asets/img/icon/honda.jpeg')  ?>" width="100" height="100" alt="Submit button">
+              </center>
+            </form>
+          </div>
+	       </li>
+	        <li class="col-sm-3">
 	              <div class="card-body">
                   <form action="<?php echo base_url('pencarian')?>" action="GET">
                     <center>
@@ -240,25 +230,21 @@
     <?php echo $pagination; ?>
     </div>
     <div class="col-sm-4">
-      <article class="shadow card card-product">
-        <div class="card-body">
-            <center>
-              <a href="<?= base_url().'keunggulan' ?>">
-                <img src="<?= base_url().'asets/img/info/1.gif' ?>" width="220px" height="130px;" alt="">
-              </a>
-              <h5 class="mt-2">Keunggulan Meranti Motor</h5>
-            </center>
-        </div>
+      <article class="card card-product">
+        <center>
+          <a href="<?= base_url().'keunggulan' ?>">
+            <img src="<?= base_url().'asets/img/info/keunggulan.jpg' ?>" width="100%" height="130px;" alt="">
+          </a>
+          <h5 class="mt-2">Keunggulan Meranti Motor</h5>
+        </center>
       </article>
-      <article class="shadow card card-product">
-        <div class="card-body">
-          <center>
-            <a href="<?= base_url().'keunggulan' ?>">
-              <img src="<?= base_url().'asets/img/info/2.gif' ?>" width="220px" height="130px;" alt="">
-            </a>
-            <h5 class="mt-2">Cara Beli Mobil</h5>
-          </center>
-        </div>
+      <article class="card card-product">
+        <center>
+          <a href="<?= base_url().'keunggulan' ?>">
+            <img src="<?= base_url().'asets/img/info/159329_620.jpg' ?>" width="100%" height="130px;" alt="">
+          </a>
+          <h5 class="mt-2">Cara Beli Mobil</h5>
+        </center>
       </article>
     </div>
   </div>
@@ -271,9 +257,9 @@
       <h3 class="my-4">Situs pencarian mobil bekas berkualitas dan terpercaya di area Makassar</h3>
       <br>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 mb-3">
       <h3>Lokasi Showroom Kami</h3>
-      <body class="shadow">
+      <body>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.661402727205!2d119.45243571396017!3d-5.1580671535537705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2dd67a6492b%3A0xe2d338315a424058!2sJl.+Meranti+2%2C+Paropo%2C+Panakkukang%2C+Kota+Makassar%2C+Sulawesi+Selatan+90231!5e0!3m2!1sid!2sid!4v1554345014646!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </body>
     </div>
