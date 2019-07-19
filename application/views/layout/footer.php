@@ -39,7 +39,6 @@
 		</div><!-- //container -->
 	</footer>
 	<!-- ========================= FOOTER END // ========================= -->
-
 	<!-- Bootstrap core JavaScript -->
 	<script src="<?= base_url().'asets/vendor/jquery/jquery.min.js' ?>"></script>
 	<script src="<?= base_url().'asets/vendor/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>

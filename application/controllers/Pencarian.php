@@ -8,7 +8,6 @@ class Pencarian extends CI_Controller {
   }
   public function cari()
   {
-    //$config['base_url'] = site_url('pencarian'); //site url
     $config['base_url'] = 'http://localhost/showroom/pencarian/cari'; //site url
     $config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
     $config['per_page'] = 3;  //show record per halaman
@@ -37,7 +36,6 @@ class Pencarian extends CI_Controller {
 
     $this->pagination->initialize($config);
     $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-    //panggil function get_mahasiswa_list yang ada pada mmodel mahasiswa_model.
     $data['data'] = $this->model_mobil->listpencarian($config["per_page"], $data['page']);
     $mobil = array("Toyota","Honda","Suzuki","Nissan","Mitsubishi","Daihatsu","Mazda","Hino");
     $data['jmlhlist1'] = $this->model_mobil->total($mobil[0]);
@@ -52,6 +50,4 @@ class Pencarian extends CI_Controller {
     $data['pagination'] = $this->pagination->create_links();
     $this->load->template('pencarian' , $data);
   }
-
-
 }
