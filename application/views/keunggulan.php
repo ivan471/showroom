@@ -9,7 +9,7 @@
 		</div>
 		<div class="col-sm-9">
 			<div class="content-item">
-				<h2 id="Keunggulan">Keunggulan Meranti Motor</h2>
+				<h2 id="keunggulan">Keunggulan Meranti Motor</h2>
 				<div class="row">
 					<div class="col-sm-4 mt-5 pl-5 pr-5">
 						<center>

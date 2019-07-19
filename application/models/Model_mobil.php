@@ -1,13 +1,13 @@
 <?php
-	class model_mobil extends CI_Model {
+class model_mobil extends CI_Model {
 
 	public function tampil( $link ){
 		$query = $this->db->query("SELECT * from tb_mobil where link='".$link."' ");
 		return $query->row_array();
 	}
 	public function tampilterbaru( $limit, $start ){
-			$query = $this->db->query("SELECT * from tb_mobil order by tanggal_input desc limit $start, $limit");
-			return $query->result_array();
+		$query = $this->db->query("SELECT * from tb_mobil order by tanggal_input desc limit $start, $limit");
+		return $query->result_array();
 	}
 	public function listpencarian($limit, $start ){
 		$link = $this->input->get('data');
@@ -41,7 +41,7 @@
 			$query = $this->db->query("SELECT * FROM tb_mobil where harga between '$min' and '$max' limit $start, $limit");
 			return $query->result_array();
 		}
-			else{
+		else{
 			$cari = $this->input->get('cari', TRUE);
 			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '%$cari%' limit $start, $limit");
 			return $query->result_array();

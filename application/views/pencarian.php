@@ -14,7 +14,7 @@
 					<div class="card card-filter">
 						<article class="card-group-item">
 							<header class="card-header">
-								<a class="" aria-expanded="true" href="#" data-toggle="collapse" data-target="#collapse22">
+								<a class="" aria-expanded="true" data-toggle="collapse" data-target="#collapse22">
 									<i class="icon-action fa fa-chevron-down"></i>
 									<h6 class="title">Berdasarkan Kategori</h6>
 								</a>
@@ -45,7 +45,7 @@
 						</article> <!-- card-group-item.// -->
 						<article class="card-group-item">
 							<header class="card-header">
-								<a href="" data-toggle="collapse" data-target="#collapse33">
+								<a  data-toggle="collapse" data-target="#collapse33">
 									<i class="icon-action fa fa-chevron-down"></i>
 									<h6 class="title">Berdasarkan Harga</h6>
 								</a>
@@ -83,7 +83,7 @@
 						</article> <!-- card-group-item.// -->
 				<article class="card-group-item">
 					<header class="card-header">
-						<a href="" data-toggle="collapse" data-target="#collapse44">
+						<a  data-toggle="collapse" data-target="#collapse44">
 							<i class="icon-action fa fa-chevron-down"></i>
 							<h6 class="title">Berdasarkan Merk </h6>
 						</a>
@@ -155,7 +155,7 @@
 		</aside> <!-- col.// -->
 
 		<main class="col-sm-9">
-			<?php if (!empty($data)==0){?>
+			<?php if (empty($data)){?>
 				<center>
 				<h4 id="info"> Tidak Ada Hasil Pencarian</h4>
 			</center>
@@ -200,9 +200,10 @@
 				</article> <!-- card product .// -->
 			<?php endforeach; ?>
 			<?php } ?>
+			<?php if (!empty($data)){
+				echo $pagination;} ?>
 	</main> <!-- col.// -->
 	<div class="col-sm">
-		<?php echo $pagination; ?>
 	</div>
 	</div>
 	</div> <!-- container .//  -->

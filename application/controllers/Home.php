@@ -8,12 +8,12 @@ class Home extends CI_Controller {
     $this->load->library('pagination');
     $this->load->model('model_mobil');
   }
-	//
-	public function index()
-	{
-    $config['base_url'] = 'http://localhost/showroom/'; //site url
+  //
+  public function index()
+  {
+    $config['base_url'] = 'http://localhost/showroom/home/index'; //site url
     $config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
-    $config['per_page'] = 6;  //show record per halaman
+    $config['per_page'] = 10;  //show record per halaman
     $config["uri_segment"] = 3;  // uri parameter
     $choice = $config["total_rows"] / $config["per_page"];
     $config["num_links"] = floor($choice);
@@ -39,13 +39,13 @@ class Home extends CI_Controller {
     $this->pagination->initialize($config);
     $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
     //panggil function get_mahasiswa_list yang ada pada mmodel mahasiswa_model.
-     $data['data'] = $this->model_mobil->tampilterbaru($config["per_page"], $data['page']);
+    $data['data'] = $this->model_mobil->tampilterbaru($config["per_page"], $data['page']);
     $data['terbaru'] = $this->model_mobil->terbaru();
     $data['terbaru2'] = $this->model_mobil->terbaru2();
     $data['pagination'] = $this->pagination->create_links();
-		$this->load->template( 'halamanutama', $data );
-		//$this->load->view('halamanutama');
-	}
+    $this->load->template( 'halamanutama', $data );
+    //$this->load->view('halamanutama');
+  }
   public function detail( $link )
   {
     $data_link =$this->model_mobil->tampil( $link );
@@ -59,9 +59,9 @@ class Home extends CI_Controller {
     $this->load->template('detail', $data);
   }
   public function profil()
-	{
-		$this->load->template('profil');
-	}
+  {
+    $this->load->template('profil');
+  }
   public function keunggulan()
   {
     $this->load->template('keunggulan');
