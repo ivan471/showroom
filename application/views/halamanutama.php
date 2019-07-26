@@ -1,30 +1,44 @@
-<header>
+<header mx>
   <div class="row">
     <div class="col-sm-6 mt-3 ly-1">
-      <div id="carouselExampleIndicators" class="carousel slide shadow" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide shadow " data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active">
             <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/dpn1.jpeg' ?>">
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item">
-            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan2.jpeg' ?>">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/1.jpeg' ?>">
+          </div>
+          <div class="carousel-item">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/2.jpeg' ?>">
+          </div>
+          <div class="carousel-item ">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/3.jpeg' ?>">
+          </div>
+          <div class="carousel-item ">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/11.jpeg' ?>">
           </div>
         </div>
       </div>
     </div>
     <div class="col-sm-6 mt-3 ly-2">
-      <div id="carouselExampleIndicators1" class="carousel slide shadow" data-ride="carousel">
+      <div id="carouselExampleIndicators1" class="carousel slide shadow " data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan.jpeg' ?>">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/9.jpeg' ?>">
           </div>
           <div class="carousel-item">
-            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan2.jpeg' ?>">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/5.jpeg' ?>">
           </div>
           <div class="carousel-item">
-            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/depan3.jpeg' ?>">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/6.jpeg' ?>">
+          </div>
+          <div class="carousel-item">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/7.jpeg' ?>">
+          </div>
+          <div class="carousel-item">
+            <img style="width:100%; max-height: 300px;" src="<?= base_url().'asets/img/depan/8.jpeg' ?>">
           </div>
         </div>
       </div>
