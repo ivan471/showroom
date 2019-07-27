@@ -11,6 +11,7 @@ class Home extends CI_Controller {
   //
   public function index()
   {
+    $this->session->sess_destroy();
     $config['base_url'] = 'http://localhost/showroom/home/index'; //site url
     $config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
     $config['per_page'] = 10;  //show record per halaman
@@ -48,6 +49,7 @@ class Home extends CI_Controller {
   }
   public function detail( $link )
   {
+    $this->session->sess_destroy();
     $data_link =$this->model_mobil->tampil( $link );
     $query = $this->db->query("SELECT * from tb_mobil where link='".$link."' ");
     $row = $query->row();
@@ -60,10 +62,12 @@ class Home extends CI_Controller {
   }
   public function profil()
   {
+    $this->session->sess_destroy();
     $this->load->template('profil');
   }
   public function keunggulan()
   {
+    $this->session->sess_destroy();
     $this->load->template('keunggulan');
   }
 

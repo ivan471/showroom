@@ -9,40 +9,38 @@ class model_mobil extends CI_Model {
 		$query = $this->db->query("SELECT * from tb_mobil order by tanggal_input desc limit $start, $limit");
 		return $query->result_array();
 	}
-	public function listpencarian($limit, $start ){
-		$link = $this->input->get('data');
-		if ($link == "baru") {
-			$query = $this->db->query("SELECT * FROM tb_mobil order by tanggal_input desc limit $start, $limit");
+	public function listpencarian($limit, $start, $sort ){
+		if ($sort == "cari") {
+			$set = $this->session->merk;
+			$query = $this->db->query("SELECT * FROM tb_mobil where merk = '".$set."' limit $start, $limit");
 			return $query->result_array();
-		}elseif ($link == "thn_baru") {
-			$query = $this->db->query("SELECT * FROM tb_mobil order by tahun desc limit $start, $limit");
-			return $query->result_array();
-		}elseif ($link == "thn_lama") {
-			$query = $this->db->query("SELECT * FROM tb_mobil order by tahun asc limit $start, $limit");
-			return $query->result_array();
-		}elseif ($link == "mahal") {
-			$query = $this->db->query("SELECT * FROM tb_mobil order by harga desc limit $start, $limit");
-			return $query->result_array();
-		}elseif ($link == "murah") {
-			$query = $this->db->query("SELECT * FROM tb_mobil order by harga asc limit $start, $limit");
-			return $query->result_array();
-		}elseif ($link == "cari") {
-			$set = $this->input->get('nilai');
-			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '%$set%' limit $start, $limit");
-			return $query->result_array();
-		}elseif ($link == "nama") {
-			$cari = $this->input->post('nilai');
-			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '%$cari%' limit $start, $limit");
-			return $query->result_array();
-		}
-		elseif ($link == "harga") {
-			$min = $this->input->get('min');
-			$max = $this->input->get('max');
+		}elseif ($sort == "harga") {
+			$min = $this->session->min;
+			$max = $this->session->max;
 			$query = $this->db->query("SELECT * FROM tb_mobil where harga between '$min' and '$max' limit $start, $limit");
 			return $query->result_array();
-		}
-		else{
-			$cari = $this->input->get('cari', TRUE);
+		}elseif ($sort == "murah") {
+				$set = $this->session->merk;
+				$query = $this->db->query("SELECT * FROM tb_mobil order by harga asc limit $start, $limit");
+				return $query->result_array();
+		}elseif ($sort == "mahal") {
+				$set = $this->session->merk;
+				$query = $this->db->query("SELECT * FROM tb_mobil order by harga desc limit $start, $limit");
+				return $query->result_array();
+		}elseif ($sort == "thn_lama") {
+				$set = $this->session->merk;
+				$query = $this->db->query("SELECT * FROM tb_mobil order by tahun asc limit $start, $limit");
+				return $query->result_array();
+		}elseif ($sort == "thn_baru") {
+				$set = $this->session->merk;
+				$query = $this->db->query("SELECT * FROM tb_mobil order by tahun desc limit $start, $limit");
+				return $query->result_array();
+		}elseif ($sort == "baru") {
+				$set = $this->session->merk;
+				$query = $this->db->query("SELECT * FROM tb_mobil order by tanggal_input desc limit $start, $limit");
+				return $query->result_array();
+		}else{
+			$cari = $this->session->cari;
 			$query = $this->db->query("SELECT * FROM tb_mobil where nama like '%$cari%' limit $start, $limit");
 			return $query->result_array();
 		}

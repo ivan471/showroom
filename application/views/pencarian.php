@@ -85,7 +85,7 @@
 							<header class="card-header">
 								<a  data-toggle="collapse" data-target="#collapse44">
 									<i class="icon-action fa fa-chevron-down"></i>
-									<h6 class="title">Berdasarkan Merk </h6>
+									<h6 class="title">Berdasarkan Merk</h6>
 								</a>
 							</header>
 							<div class="filter-content collapse show" id="collapse44">
@@ -95,7 +95,7 @@
 											<form id="6" action="<?= base_url().'pencarian' ?>" method="get">
 												<input type="hidden" name="data" value="cari">
 												<input type="hidden" name="nilai" value="Toyota">
-												<a href="#"onclick="document.getElementById('6').submit();">Toyota<span class="float-right badge badge-light round"><?= $jmlhlist1['jmlh']; ?></span></a>
+												<a href="#" onclick="document.getElementById('6').submit();">Toyota<span class="float-right badge badge-light round"><?= $jmlhlist1['jmlh']; ?></span></a>
 											</form>
 										</li>
 										<li>
@@ -122,14 +122,14 @@
 										<li>
 											<form id="10" action="<?= base_url().'pencarian' ?>" method="get">
 												<input type="hidden" name="data" value="cari">
-												<input type="hidden" name="nilai" value="Honda">
+												<input type="hidden" name="nilai" value="Mitsubishi">
 												<a href="#"onclick="document.getElementById('10').submit();">Mitsubishi<span class="float-right badge badge-light round"><?= $jmlhlist5['jmlh']; ?></span></a>
 											</form>
 										</li>
 										<li>
 											<form id="11" action="<?= base_url().'pencarian' ?>" method="get">
 												<input type="hidden" name="data" value="cari">
-												<input type="hidden" name="nilai" value="Honda">
+												<input type="hidden" name="nilai" value="Daihatsu">
 												<a href="#"onclick="document.getElementById('11').submit();">Daihatsu<span class="float-right badge badge-light round"><?= $jmlhlist6['jmlh']; ?></span></a>
 											</form>
 										</li>

@@ -23,6 +23,7 @@
 	<div id="search">
 		<form action="<?= base_url().'pencarian'?>" class="py-1" method="GET">
 			<div class="input-group">
+				<input type="hidden" name="data" value="pencarian">
 				<input type="text" class="form-control" id="cari" name="cari" placeholder="Cari Nama Mobil" >
 				<div class="input-group-append">
 					<button id="btn1" class="btn btn-primary" type="submit" onclick="window.location ='<?php base_url().'pencarian' ?>'"><i class="fa fa-search"></i></button>

@@ -8,11 +8,66 @@ class Pencarian extends CI_Controller {
   }
   public function cari()
   {
+    if ($this->input->get('data') == 'cari') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->merk = $this->input->get('nilai');
+      $this->session->set_userdata('keyword', $data['sort']);
+    }elseif ($this->input->get('data') == 'pencarian') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->cari = $this->input->get('cari');
+      $this->session->set_userdata('keyword', $data['sort']);
+    } elseif ($this->input->get('data') == 'harga') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->min = $this->input->get('min');
+      $this->session->max = $this->input->get('max');
+      $this->session->set_userdata('keyword', $data['sort']);
+    }elseif ($this->input->get('data') == 'murah') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->set_userdata('keyword', $data['sort']);
+    }elseif ($this->input->get('data') == 'mahal') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->set_userdata('keyword', $data['sort']);
+    }elseif ($this->input->get('data') == 'thn_lama') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->set_userdata('keyword', $data['sort']);
+    }elseif ($this->input->get('data') == 'thn_baru') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->set_userdata('keyword', $data['sort']);
+    }elseif ($this->input->get('data') == 'baru') {
+      $data['sort'] = $this->input->get('data');
+      $this->session->set_userdata('keyword', $data['sort']);
+    }else{
+      $data['sort'] = $this->session->userdata('keyword');
+    }
     $config['base_url'] = 'http://localhost/showroom/pencarian/cari'; //site url
-    $config['total_rows'] = $this->db->count_all('tb_mobil'); //total row
+    if ($this->session->userdata('keyword') == 'cari') {
+      $this->db->where('merk', $this->session->merk);
+      $this->db->from('tb_mobil');
+      $config['total_rows'] = $this->db->count_all_results(); //total row
+    }elseif ($this->session->userdata('keyword') == 'harga') {
+      $this->db->where('harga >=', $this->session->min);
+      $this->db->where('harga <=', $this->session->max);
+      $this->db->from('tb_mobil');
+      $config['total_rows'] = $this->db->count_all_results(); //total row
+    }elseif ($this->session->userdata('keyword') == 'mahal') {
+      $this->db->order_by('harga', 'DESC');
+      $this->db->from('tb_mobil');
+      $config['total_rows'] = $this->db->count_all_results();
+    }elseif ($this->session->userdata('keyword') == 'murah') {
+      $this->db->order_by('harga', 'ASC');
+      $this->db->from('tb_mobil');
+      $config['total_rows'] = $this->db->count_all_results();
+    }elseif ($this->session->userdata('keyword') == 'pencarian') {
+        $this->db->like('nama', $this->session->cari);
+        $this->db->from('tb_mobil');
+        $config['total_rows'] = $this->db->count_all_results(); //total row
+    } else {
+      $this->db->from('tb_mobil');
+      $config['total_rows'] = $this->db->count_all_results();
+    }
     $config['per_page'] = 3;  //show record per halaman
     $config["uri_segment"] = 3;  // uri parameter
-    $choice = $config["total_rows"] / $config["per_page"];
+    $choice = $config['total_rows'] / $config['per_page'];
     $config["num_links"] = floor($choice);
 
     $config['first_link']       = 'First';
@@ -36,7 +91,7 @@ class Pencarian extends CI_Controller {
 
     $this->pagination->initialize($config);
     $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-    $data['data'] = $this->model_mobil->listpencarian($config["per_page"], $data['page']);
+    $data['data'] = $this->model_mobil->listpencarian($config["per_page"], $data['page'],$data['sort']);
     $mobil = array("Toyota","Honda","Suzuki","Nissan","Mitsubishi","Daihatsu","Mazda","Hino");
     $data['jmlhlist1'] = $this->model_mobil->total($mobil[0]);
     $data['jmlhlist2'] = $this->model_mobil->total($mobil[1]);
